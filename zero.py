@@ -178,9 +178,9 @@ def lineBot(op):
                     msg.contentType = 0
                     msg.text = "URLat\n" + msg.contentMetadata["postEndUrl"]
                     cl.sendMessage(msg.to,msg.text)
-            #if msg.contentType == 0:
-            if text is None:
-                return
+            if msg.contentType == 0:
+                if text is None:
+                    return
             grp = cl.getGroup(to)
             GS = grp.creator.mid
             if sender in GS or sender in settings['gm'] or sender in settings['admin']:
@@ -194,11 +194,16 @@ def lineBot(op):
                             if mention["M"] not in lists:
                                 lists.append(mention["M"])
                         for ls in lists:
-                            settings['gm'][to][ls] = True
+                            if to not in settings['gm']:
+                                settings['gm'][to] = {}
+                                settings['gm'][to] += ls
+                            elif ls not in settings['gm'][to]:
+                                settings['gm'][to] += ls
                             with open('temp.json', 'w') as fp:
                                 json.dump(settings, fp, sort_keys=True, indent=4)
                                 cl.sendMessage(to, "成功新增Group Master權限")
-                                cl.sendContact(to, ls)
+                            if ls in settings['gm'][to]:
+                                cl.sendMessage(to, "此人已為Group Master權限")
                 elif msg.text.lower().startswith("del_gm "):
                     if 'MENTION' in msg.contentMetadata.keys()!= None:
                         names = re.findall(r'@(\w+)', text)
@@ -217,6 +222,140 @@ def lineBot(op):
                                     cl.sendContact(to, ls)
                             else:
                                 cl.sendMessage(to, "此人並未擁有Group Master權限")
+            if sender in settings['admin']:
+                if msg.text.lower().startswith("add_gm "):
+                    if 'MENTION' in msg.contentMetadata.keys()!= None:
+                        names = re.findall(r'@(\w+)', text)
+                        mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                        mentionees = mention['MENTIONEES']
+                        lists = []
+                        for mention in mentionees:
+                            if mention["M"] not in lists:
+                                lists.append(mention["M"])
+                        for ls in lists:
+                            if ls not in settings['gm'][to]:
+                                settings['gm'][to][ls] = True
+                                with open('temp.json', 'w') as fp:
+                                    json.dump(settings, fp, sort_keys=True, indent=4)
+                                    cl.sendMessage(to, "成功新增Group Master權限")
+                                    cl.sendContact(to, ls)
+                            else:
+                                cl.sendMessage(to, "此人已擁有Group Master權限")
+                elif msg.text.lower().startswith("del_gm "):
+                    if 'MENTION' in msg.contentMetadata.keys()!= None:
+                        names = re.findall(r'@(\w+)', text)
+                        mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                        mentionees = mention['MENTIONEES']
+                        lists = []
+                        for mention in mentionees:
+                            if mention["M"] not in lists:
+                                lists.append(mention["M"])
+                        for ls in lists:
+                            if ls in settings['gm'][to]:
+                                del settings['gm'][to][ls]
+                                with open('temp.json', 'w') as fp:
+                                    json.dump(settings, fp, sort_keys=True, indent=4)
+                                    cl.sendMessage(to, "成功移除Group Master權限")
+                                    cl.sendContact(to, ls)
+                            else:
+                                cl.sendMessage(to, "此人並未擁有Group Master權限")
+                if msg.text.lower().startswith("add_admin "):
+                    if 'MENTION' in msg.contentMetadata.keys()!= None:
+                        names = re.findall(r'@(\w+)', text)
+                        mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                        mentionees = mention['MENTIONEES']
+                        lists = []
+                        for mention in mentionees:
+                            if mention["M"] not in lists:
+                                lists.append(mention["M"])
+                        for ls in lists:
+                            if ls not in settings['admin']:
+                                settings['admin'][ls] = True
+                                with open('temp.json', 'w') as fp:
+                                    json.dump(settings, fp, sort_keys=True, indent=4)
+                                    cl.sendMessage(to, "成功新增Admin權限")
+                                    cl.sendContact(to, ls)
+                            else:
+                                cl.sendMessage(to, "此人已擁有Admin權限")
+                elif msg.text.lower().startswith("del_gm "):
+                    if 'MENTION' in msg.contentMetadata.keys()!= None:
+                        names = re.findall(r'@(\w+)', text)
+                        mention = ast.literal_eval(msg.contentMetadata['MENTION'])
+                        mentionees = mention['MENTIONEES']
+                        lists = []
+                        for mention in mentionees:
+                            if mention["M"] not in lists:
+                                lists.append(mention["M"])
+                        for ls in lists:
+                            if ls in settings['gm'][to]:
+                                del settings['gm'][to][ls]
+                                with open('temp.json', 'w') as fp:
+                                    json.dump(settings, fp, sort_keys=True, indent=4)
+                                    cl.sendMessage(to, "成功移除Admin權限")
+                                    cl.sendContact(to, ls)
+                            else:
+                                cl.sendMessage(to, "此人並未擁有Admin權限")
+                elif "Ban" in msg.text:
+                    if msg.toType == 2:
+                        print ("[Ban] 成功")
+                        key = eval(msg.contentMetadata["MENTION"])
+                        key["MENTIONEES"][0]["M"]
+                        targets = []
+                        for x in key["MENTIONEES"]:
+                            targets.append(x["M"])
+                        if targets == []:
+                            pass
+                        else:
+                            for target in targets:
+                                try:
+                                    settings["blacklist"][target] = True
+                                    with open('temp.json', 'w') as fp:
+                                        json.dump(settings, fp, sort_keys=True, indent=4)
+                                        cl.sendMessage(to, "已加入黑名單")
+                                except:
+                                    pass
+                elif "Unban" in msg.text:
+                    if msg.toType == 2:
+                        print ("[UnBan] 成功")
+                        key = eval(msg.contentMetadata["MENTION"])
+                        key["MENTIONEES"][0]["M"]
+                        targets = []
+                        for x in key["MENTIONEES"]:
+                            targets.append(x["M"])
+                        if targets == []:
+                            pass
+                        else:
+                            for target in targets:
+                                try:
+                                    del settings["blacklist"][target]
+                                    with open('temp.json', 'w') as fp:
+                                        json.dump(settings, fp, sort_keys=True, indent=4)
+                                        cl.sendMessage(to, "已解除黑名單")
+                                except:
+                                    pass
+                elif msg.text in ["c","C","cancel","Cancel"]:
+                      if msg.toType == 2:
+                        X = cl.getGroup(msg.to)
+                        if X.invitee is not None:
+                            gInviMids = (contact.mid for contact in X.invitee)
+                            ginfo = cl.getGroup(msg.to)
+                            sinvitee = str(len(ginfo.invitee))
+                            start = time.time()
+                            for cancelmod in gInviMids:
+                                cl.cancelGroupInvitation(msg.to, [cancelmod])
+                            elapsed_time = time.time() - start
+                            cl.sendMessage(to, "已取消完成\n取消時間: %s秒" % (elapsed_time))
+                            cl.sendMessage(to, "取消人數:" + sinvitee)
+                elif "Fbc:" in msg.text:
+                    bctxt = text.replace("Fbc:","")
+                    t = cl.getAllContactIds()
+                    for manusia in t:
+                        cl.sendMessage(manusia,(bctxt))
+                elif "Gbc:" in msg.text:
+                    bctxt = text.replace("Gbc:","")
+                    n = cl.getGroupIdsJoined()
+                    for manusia in n:
+                        cl.sendMessage(manusia,(bctxt))
             if text.lower() == 'speed':
                 start = time.time()
                 cl.sendMessage(to, "processing......")
@@ -247,6 +386,28 @@ def lineBot(op):
                         cl.sendMessage(to, mc)
                     except:
                         pass
+            elif "banlist" in msg.text:
+                if settings["blacklist"] == {}:
+                    cl.sendMessage(to, "沒有黑名單")
+                else:
+                    try:
+                        mc = "[ 黑名單 ]\n"
+                        for mi_d in settings["blacklist"]:
+                            mc += "-> " + cl.getContact(mi_d).displayName + "\n"
+                        cl.sendMessage(to, mc)
+                    except:
+                        pass
+            elif "gmlist" in msg.text:
+                if settings["admin"] == {}:
+                    cl.sendMessage(to, "沒有GM名單")
+                else:
+                    try:
+                        mc = "[ GM名單 ]\n"
+                        for mi_d in settings["gm"][to]:
+                            mc += "-> " + cl.getContact(mi_d).displayName + "\n"
+                        cl.sendMessage(to, mc)
+                    except:
+                        pass 
             elif text.lower() == 'rebot':
                 cl.sendMessage(to, "重新啟動")
                 restartBot()
@@ -409,135 +570,30 @@ def lineBot(op):
                         no += 1
                     ret_ += "\n╚══[ 總共： {} ]".format(str(len(group.members)))
                     cl.sendMessage(to, str(ret_))
-            elif text.lower() == 'sn':
-                tz = pytz.timezone("Asia/Jakarta")
-                timeNow = datetime.now(tz=tz)
-                day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
-                hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
-                bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-                hr = timeNow.strftime("%A")
-                bln = timeNow.strftime("%m")
-                for i in range(len(day)):
-                    if hr == day[i]: hasil = hari[i]
-                for k in range(0, len(bulan)):
-                    if bln == str(k): bln = bulan[k-1]
-                readTime = hasil + ", " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y') + "\nJam : [ " + timeNow.strftime('%H:%M:%S') + " ]"
-                if msg.to in read['readPoint']:
-                        try:
-                            del read['readPoint'][msg.to]
-                            del read['readMember'][msg.to]
-                            del read['readTime'][msg.to]
-                        except:
-                            pass
-                        read['readPoint'][msg.to] = msg.id
-                        read['readMember'][msg.to] = ""
-                        read['readTime'][msg.to] = datetime.now().strftime('%H:%M:%S')
-                        read['ROM'][msg.to] = {}
-                        with open('read.json', 'w') as fp:
-                            json.dump(read, fp, sort_keys=True, indent=4)
-                            cl.sendMessage(msg.to,"已讀點已開始")
-                else:
-                    try:
-                        del read['readPoint'][msg.to]
-                        del read['readMember'][msg.to]
-                        del read['readTime'][msg.to]
-                    except:
-                        pass
-                    read['readPoint'][msg.to] = msg.id
-                    read['readMember'][msg.to] = ""
-                    read['readTime'][msg.to] = datetime.now().strftime('%H:%M:%S')
-                    read['ROM'][msg.to] = {}
-                    with open('read.json', 'w') as fp:
-                        json.dump(read, fp, sort_keys=True, indent=4)
-                        cl.sendMessage(msg.to, "設定已讀點:\n" + readTime)
-            elif text.lower() == 'sf':
-                tz = pytz.timezone("Asia/Jakarta")
-                timeNow = datetime.now(tz=tz)
-                day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
-                hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
-                bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-                hr = timeNow.strftime("%A")
-                bln = timeNow.strftime("%m")
-                for i in range(len(day)):
-                    if hr == day[i]: hasil = hari[i]
-                for k in range(0, len(bulan)):
-                    if bln == str(k): bln = bulan[k-1]
-                readTime = hasil + ", " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y') + "\nJam : [ " + timeNow.strftime('%H:%M:%S') + " ]"
-                if msg.to not in read['readPoint']:
-                    cl.sendMessage(msg.to,"已讀點已經關閉")
-                else:
-                    try:
-                        del read['readPoint'][msg.to]
-                        del read['readMember'][msg.to]
-                        del read['readTime'][msg.to]
-                    except:
-                            pass
-                    cl.sendMessage(msg.to, "刪除已讀點:\n" + readTime)
-            elif text.lower() == 'sr':
-                tz = pytz.timezone("Asia/Jakarta")
-                timeNow = datetime.now(tz=tz)
-                day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
-                hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
-                bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-                hr = timeNow.strftime("%A")
-                bln = timeNow.strftime("%m")
-                for i in range(len(day)):
-                    if hr == day[i]: hasil = hari[i]
-                for k in range(0, len(bulan)):
-                    if bln == str(k): bln = bulan[k-1]
-                readTime = hasil + ", " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y') + "\n時間 : [ " + timeNow.strftime('%H:%M:%S') + " ]"
-                if msg.to in read["readPoint"]:
-                    try:
-                        del read["readPoint"][msg.to]
-                        del read["readMember"][msg.to]
-                        del read["readTime"][msg.to]
-                    except:
-                        pass
-                    cl.sendMessage(msg.to, "重置已讀點:\n" + readTime)
-                else:
-                    cl.sendMessage(msg.to, "已讀點未設定")
-            elif text.lower() == 'r':
-                tz = pytz.timezone("Asia/Jakarta")
-                timeNow = datetime.now(tz=tz)
-                day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
-                hari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"]
-                bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-                hr = timeNow.strftime("%A")
-                bln = timeNow.strftime("%m")
-                for i in range(len(day)):
-                    if hr == day[i]: hasil = hari[i]
-                for k in range(0, len(bulan)):
-                    if bln == str(k): bln = bulan[k-1]
-                readTime = hasil + ", " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y') + "\n時間 : [ " + timeNow.strftime('%H:%M:%S') + " ]"
-                if receiver in read['readPoint']:
-                    if read["ROM"][receiver].items() == []:
-                        cl.sendMessage(receiver,"[ 已讀者 ]:\n沒有")
-                    else:
-                        chiya = []
-                        for rom in read["ROM"][receiver].items():
-                            chiya.append(rom[1])
-                        cmem = cl.getContacts(chiya)
-                        zx = ""
-                        zxc = ""
-                        zx2 = []
-                        xpesan = '[ 已讀者 ]:\n'
-                    for x in range(len(cmem)):
-                        xname = str(cmem[x].displayName)
-                        pesan = ''
-                        pesan2 = pesan+"@c\n"
-                        xlen = str(len(zxc)+len(xpesan))
-                        xlen2 = str(len(zxc)+len(pesan2)+len(xpesan)-1)
-                        zx = {'S':xlen, 'E':xlen2, 'M':cmem[x].mid}
-                        zx2.append(zx)
-                        zxc += pesan2
-                    text = xpesan+ zxc + "\n[ 已讀時間 ]: \n" + readTime
-                    try:
-                        cl.sendMessage(receiver, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
-                    except Exception as error:
-                        print (error)
-                    pass
-                else:
-                    cl.sendMessage(receiver,"已讀點未設定")
+            elif text.lower() == 'tagall':
+                group = cl.getGroup(msg.to)
+                nama = [contact.mid for contact in group.members]
+                k = len(nama)//100
+                for a in range(k+1):
+                    txt = u''
+                    s=0
+                    b=[]
+                    for i in group.members[a*100 : (a+1)*100]:
+                        b.append({"S":str(s), "E" :str(s+6), "M":i.mid})
+                        s += 7
+                        txt += u'@Alin \n'
+                    cl.sendMessage(to, text=txt, contentMetadata={u'MENTION': json.dumps({'MENTIONEES':b})}, contentType=0)
+                    cl.sendMessage(to, "總共 {} 個成員".format(str(len(nama))))
+            elif text.lower() == 'lg':
+                groups = cl.groups
+                ret_ = "[群組列表]"
+                no = 0 + 1
+                for gid in groups:
+                    group = cl.getGroup(gid)
+                    ret_ += "\n {}. {} | {}".format(str(no), str(group.name), str(len(group.members)))
+                    no += 1
+                ret_ += "\n[總共 {} 個群組]".format(str(len(groups)))
+                cl.sendMessage(to, str(ret_))
         if op.type == 26:
             try:
                 msg = op.message

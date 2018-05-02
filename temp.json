@@ -1,6 +1,10 @@
 {
     "admin": {
-        "u85ee80cfb293599510d0c17ab25a5c98": true
+        "u1d263d768adbdd3b9f4c51833c7c4d29": true,
+        "u72e36ec4d3a1c6b3b5b4a3654eead14a": true,
+        "u85ee80cfb293599510d0c17ab25a5c98": true,
+        "ua8fe07daf59c683486005b2352975f53": true,
+        "ub7babc6a8fd9943f96342c84abe09670": true
     },
     "autoAdd": true,
     "autoJoin": true,
@@ -14,7 +18,9 @@
     "checkSticker": false,
     "contact": true,
     "detectMention": false,
-    "gm": {},
+    "gm": {
+        "c1529e3e087e937552012768aa7e9db44": "u72e36ec4d3a1c6b3b5b4a3654eead14au1d263d768adbdd3b9f4c51833c7c4d29ub7babc6a8fd9943f96342c84abe09670"
+    },
     "inviteprotect": {},
     "keyCommand": "",
     "lang": "JP",

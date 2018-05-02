@@ -918,3 +918,21 @@
 [<module 'time' (built-in)>] 
 [<module 'time' (built-in)>] 
 [<module 'time' (built-in)>] 
+[<module 'time' (built-in)>] encoding without a string argument
+[<module 'time' (built-in)>] 
+[<module 'time' (built-in)>] encoding without a string argument
+[<module 'time' (built-in)>] 
+[<module 'time' (built-in)>] encoding without a string argument
+[<module 'time' (built-in)>] 
+[<module 'time' (built-in)>] 
+[<module 'time' (built-in)>] encoding without a string argument
+[<module 'time' (built-in)>] 
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'c1529e3e087e937552012768aa7e9db44'
+[<module 'time' (built-in)>] 'c1529e3e087e937552012768aa7e9db44'
+[<module 'time' (built-in)>] unsupported operand type(s) for +=: 'dict' and 'str'
+[<module 'time' (built-in)>] 'dict' object has no attribute 'append'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'str' object does not support item deletion
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
