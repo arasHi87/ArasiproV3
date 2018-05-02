@@ -1,0 +1,29 @@
+{
+    "admin": {
+        "u85ee80cfb293599510d0c17ab25a5c98": true
+    },
+    "autoAdd": true,
+    "autoJoin": true,
+    "autoLeave": false,
+    "autoRead": false,
+    "blacklist": {},
+    "bot": {
+        "u1d263d768adbdd3b9f4c51833c7c4d29": true,
+        "u85ee80cfb293599510d0c17ab25a5c98": true
+    },
+    "checkSticker": false,
+    "contact": true,
+    "detectMention": false,
+    "gm": {},
+    "inviteprotect": {},
+    "keyCommand": "",
+    "lang": "JP",
+    "protect": true,
+    "qrprotect": {
+        "c02fb6eba0220cef6c6f82d8e15c458b6": true,
+        "c1529e3e087e937552012768aa7e9db44": false,
+        "c3432d742f135409adf48fde7c3ef5508": true
+    },
+    "reread": false,
+    "timeline": true
+}
