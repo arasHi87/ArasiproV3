@@ -8,9 +8,9 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 from gtts import gTTS
 from googletrans import Translator
 botStart = time.time()
-cl = LINE("EsVJyo88f5cVpfJIahM1.wfaBpsaYoUcwtX+wqOz2Kq.DDK06GvtyHSD669mwP6BU/13iXVF+RW3hXkMPxPUm8o=")
+cl = LINE()
 cl.log("Auth Token : " + str(cl.authToken))
-kl = LINE("Es1Ob2r9cVXgLqcmI710.JVYtGKMqTJ2g7RUtcRLZya.PbqpIFZZo554kImUY1fcW42GNWUi3ouDV55QiEUrmms=")
+kl = LINE()
 kl.log("Auth Token : " + str(kl.authToken))
 oepoll = OEPoll(cl)
 readOpen = codecs.open("read.json","r","utf-8")
@@ -69,9 +69,13 @@ def lineBot(op):
         if op.type == 0:
             return
         if op.type == 5:
-            contact = cl.getContact(param2)
+            contact = cl.getContact(op.param1)
+            print ("[ 5 ] 通知添加好友 名字: " + contact.displayName)
             if settings["autoAdd"] == True:
-                cl.sendMessage(op.param1, "你好 {} 謝謝你加本機為好友 :D\n       line.me/ti/p/1MRX_Gjbmv".format(str(cl.getContact(op.param1).displayName)))
+                cl.findAndAddContactsByMid(op.param1)
+                cl.sendMessage(op.param1, "安安！{} 感謝您加我為好友！".format(str(contact.displayName)))
+                cl.sendMessage(op.param1, "咱是由Arasi所開發的ArasiproV3\n歡迎邀我加入群組唷！\n如有什麼問題麻煩私訊作者")
+                cl.sendContact(op.param1, "u52906c3d95b296a8ef133af56d7383a4")
         if op.type == 24:
             print ("[ 24 ] 通知離開副本")
             if settings["autoLeave"] == True:
@@ -81,7 +85,7 @@ def lineBot(op):
         if op.type == 11:
             group = cl.getGroup(op.param1)
             GS = group.creator.mid
-            if settings["qrprotect"] == True:
+            if settings["qrprotect"][op.param1] == True:
                 if op.param2 in settings['admin'] or op.param2 in settings['bot'] or op.param2 == GS:
                     pass
                 else:
@@ -98,23 +102,24 @@ def lineBot(op):
             contact1 = cl.getContact(op.param2)
             contact2 = cl.getContact(op.param3)
             group = cl.getGroup(op.param1)
-            GS = group.creator.mid
             print ("[ 13 ] 通知邀請群組: " + str(group.name) + "\n邀請者: " + contact1.displayName + "\n被邀請者" + contact2.displayName)
-            if op.param2 in settings['admin'] or op.param2 in settings['bot'] or op.param2 == GS:
-                pass
-            else:
-                cl.sendMessage(op.param1,"[警告]\n邀請保護開啟中......掰掰~~~")
-                try:
-                    cl.kickoutFromGroup(op.param1,op.param2)
-                except:
+            if settings['inviteprotect'][op.param1] == True:
+                if op.param2 in settings['admin'] or op.param2 in settings['bot']:
+                    pass
+                else:
+                    cl.sendMessage(op.param1,"[警告]\n邀請保護開啟中......掰掰~~~")
                     try:
-                        kl.kickoutFromGroup(op.param1,op.param2)
+                        cl.kickoutFromGroup(op.param1,op.param2)
                     except:
-                        pass
+                        kl.kickoutFromGroup(op.param1,op.param2)
             if op.param2 in settings['blacklist']:
                 cl.cancelGroupInvitation(op.param1, op.param3)
                 cl.sendMessage(op.param1,"[警告]\n你位於黑單中並不能邀請人")
-            if clMID in op.param3:
+            if op.param3 in settings['blacklist']:
+                cl.cancelGroupInvitation(op.param1, op.param3)
+                cl.sendMessage(op.param1, "[警告]\n邀請名單位於黑單中!!!有疑問請私訊作者")
+                cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
+            if clMID == op.param3:
                 print ("進入群組: " + str(group.name))
                 cl.acceptGroupInvitation(op.param1)
                 cl.sendMessage(op.param1, "歡迎使用由Arasi開發的ArasiproV3!!!\nMy creator:")
@@ -163,10 +168,10 @@ def lineBot(op):
                         kl.acceptGroupInvitationByTicket(op.param1, ticket)
                         settings["blacklist"][op.param2] = True
                         with open('temp.json', 'w') as fp:
-                                json.dump(settings, fp, sort_keys=True, indent=4)
-                                cl.sendMessage(op.param1, "成功新增blacklist\n" + "MID : " + op.param2)
-                                time.sleep(1)
-                                cl.sendContact(op.param1, op.param2)
+                            json.dump(settings, fp, sort_keys=True, indent=4)
+                            cl.sendMessage(op.param1, "成功新增blacklist\n" + "MID : " + op.param2)
+                            time.sleep(1)
+                            cl.sendContact(op.param1, op.param2)
                         group.preventedJoinByTicket = True
                         cl.updateGroup(group)
         if op.type == 60:
@@ -279,8 +284,8 @@ def lineBot(op):
                             if mention["M"] not in lists:
                                 lists.append(mention["M"])
                         for ls in lists:
-                            if ls in settings['gm'][to]:
-                                del settings['gm'][to][ls]
+                            if ls in settings['admin']:
+                                del settings['admin'][ls]
                                 with open('temp.json', 'w') as fp:
                                     json.dump(settings, fp, sort_keys=True, indent=4)
                                     cl.sendMessage(to, "成功移除Admin權限")
@@ -342,12 +347,12 @@ def lineBot(op):
                     bctxt = text.replace("Fbc:","")
                     t = cl.getAllContactIds()
                     for manusia in t:
-                        cl.sendMessage(manusia,(bctxt))
+                        cl.sendMessage(manusia,"[好友廣播]\n"+bctxt)
                 elif "Gbc:" in msg.text:
                     bctxt = text.replace("Gbc:","")
                     n = cl.getGroupIdsJoined()
                     for manusia in n:
-                        cl.sendMessage(manusia,(bctxt))
+                        cl.sendMessage(manusia,"[群組廣播]\n"+bctxt)
                 elif text.lower() == 'add on':
                     settings["autoAdd"] = True
                     cl.sendMessage(to, "自動加入好友已開啟")
@@ -375,23 +380,46 @@ def lineBot(op):
                 elif text.lower() == 'inviteprotect on':
                     settings["inviteprotect"][to] = True
                     cl.sendMessage(to, "群組邀請保護已開啟")
+                    with open('temp.json', 'w') as fp:
+                        json.dump(settings, fp, sort_keys=True, indent=4)
                 elif text.lower() == 'inviteprotect off':
                     settings["inviteprotect"][to] = False
                     cl.sendMessage(to, "群組邀請保護已關閉")
+                    with open('temp.json', 'w') as fp:
+                        json.dump(settings, fp, sort_keys=True, indent=4)
                 elif text.lower() == 'qr on':
                     settings["qrprotect"][to] = True
                     cl.sendMessage(to, "群組網址保護已開啟")
+                    with open('temp.json', 'w') as fp:
+                        json.dump(settings, fp, sort_keys=True, indent=4)
                 elif text.lower() == 'qr off':
                     settings["qrprotect"][to] = False
                     cl.sendMessage(to, "群組網址保護已關閉")
+                    with open('temp.json', 'w') as fp:
+                        json.dump(settings, fp, sort_keys=True, indent=4)
                 elif text.lower() == 'reread on':
                     settings["reread"] = True
                     cl.sendMessage(to, "查詢收回開啟")
                 elif text.lower() == 'reread off':
                     settings["reread"] = False
                     cl.sendMessage(to, "查詢收回關閉")
-                with open('temp.json', 'w') as fp:
-                    json.dump(settings, fp, sort_keys=True, indent=4)
+                elif text.lower() == 'rebot':
+                    cl.sendMessage(to, "重新啟動")
+                    restartBot()
+                elif msg.text in ["killban"]:
+                    if msg.toType == 2:
+                        group = cl.getGroup(to)
+                        gMembMids = [contact.mid for contact in group.members]
+                        matched_list = []
+                        for tag in settings["blacklist"]:
+                            matched_list+=filter(lambda str: str == tag, gMembMids)
+                        if matched_list == []:
+                            print ("1")
+                            cl.sendMessage(to, "沒有黑名單")
+                            return
+                        for jj in matched_list:
+                            cl.kickoutFromGroup(to, [jj])
+cl.sendMessage(to, "黑名單以踢除")
             if text.lower() == 'speed':
                 start = time.time()
                 cl.sendMessage(to, "processing......")
@@ -405,7 +433,7 @@ def lineBot(op):
                     cl.sendMessage(to, "沒有機器名單")
                 else:
                     try:
-                        mc = "[ 機器名單 ]"
+                        mc = "[ 機器名單 ]\n"
                         for mi_d in settings["bot"]:
                             mc += "-> " + cl.getContact(mi_d).displayName + "\n"
                         cl.sendMessage(to, mc)
@@ -443,10 +471,7 @@ def lineBot(op):
                             mc += "-> " + cl.getContact(mi_d).displayName + "\n"
                         cl.sendMessage(to, mc)
                     except:
-                        pass 
-            elif text.lower() == 'rebot':
-                cl.sendMessage(to, "重新啟動")
-                restartBot()
+                        pass
             elif text.lower() == 'runtime':
                 timeNow = time.time()
                 runtime = timeNow - botStart

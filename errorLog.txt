@@ -1128,3 +1128,17 @@
 [<module 'time' (built-in)>] TalkException(code=8, parameterMap=None, reason='REVOKE')
 [<module 'time' (built-in)>] TalkException(code=8, parameterMap=None, reason='REVOKE')
 [<module 'time' (built-in)>] TalkException(code=8, parameterMap=None, reason='REVOKE')
+[<module 'time' (built-in)>] TalkException(parameterMap=None, reason='invalid mid', code=0)
+[<module 'time' (built-in)>] 'c111d1ff96bfe3e0a49c7aaee9b7f2b22'
+[<module 'time' (built-in)>] 'c111d1ff96bfe3e0a49c7aaee9b7f2b22'
+[<module 'time' (built-in)>] 'c111d1ff96bfe3e0a49c7aaee9b7f2b22'
+[<module 'time' (built-in)>] 'c111d1ff96bfe3e0a49c7aaee9b7f2b22'
+[<module 'time' (built-in)>] 'c111d1ff96bfe3e0a49c7aaee9b7f2b22'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'c111d1ff96bfe3e0a49c7aaee9b7f2b22'
+[<module 'time' (built-in)>] 'bot'
+[<module 'time' (built-in)>] 'bot'
+[<module 'time' (built-in)>] TalkException(reason='can not send using plain mode', code=82, parameterMap=None)
+[<module 'time' (built-in)>] 'c111d1ff96bfe3e0a49c7aaee9b7f2b22'
+[<module 'time' (built-in)>] TalkException(reason='invalid contactIds', code=0, parameterMap={})
+[<module 'time' (built-in)>] TalkException(reason='REVOKE', code=8, parameterMap=None)
