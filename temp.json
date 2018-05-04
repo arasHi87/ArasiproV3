@@ -1,11 +1,6 @@
 {
     "admin": {
-        "u3e86a5a650b403a5716425f56aec9921": true,
-        "u72e36ec4d3a1c6b3b5b4a3654eead14a": true,
-        "u85ee80cfb293599510d0c17ab25a5c98": true,
-        "u8efc93824990b63d86eebb930ab97360": true,
-        "ua8fe07daf59c683486005b2352975f53": true,
-        "ub7babc6a8fd9943f96342c84abe09670": true
+        "u85ee80cfb293599510d0c17ab25a5c98": true
     },
     "autoAdd": true,
     "autoJoin": true,
@@ -24,18 +19,18 @@
     "gm": {
         "c02fb6eba0220cef6c6f82d8e15c458b6": "u8efc93824990b63d86eebb930ab97360"
     },
-    "inviteprotect": {
-        "c111d1ff96bfe3e0a49c7aaee9b7f2b22": true,
-        "c1529e3e087e937552012768aa7e9db44": true
-    },
+    "inviteprotect": true,
     "keyCommand": "",
     "lang": "JP",
     "protect": true,
-    "qrprotect": {
-        "c02fb6eba0220cef6c6f82d8e15c458b6": true,
-        "c111d1ff96bfe3e0a49c7aaee9b7f2b22": true,
-        "c1529e3e087e937552012768aa7e9db44": false,
-        "c3432d742f135409adf48fde7c3ef5508": true
+    "qrprotect": true,
+    "react": {
+        "yukino的作者": "是Arasi!!!",
+        "伊嵐": "是帥哥",
+        "嵐喵": "是個超級大變態",
+        "師父": "87一個",
+        "桃": "看起來像變態",
+        "雯": "電雯拍揮下去就對了"
     },
     "reread": false,
     "timeline": true

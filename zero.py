@@ -84,9 +84,8 @@ def lineBot(op):
             print ("[1]更新配置文件")
         if op.type == 11:
             group = cl.getGroup(op.param1)
-            GS = group.creator.mid
-            if settings["qrprotect"][op.param1] == True:
-                if op.param2 in settings['admin'] or op.param2 in settings['bot'] or op.param2 == GS:
+            if settings["qrprotect"] == True:
+                if op.param2 in settings['admin'] or op.param2 in settings['bot']:
                     pass
                 else:
                     gs = cl.getGroup(op.param1)
@@ -98,20 +97,33 @@ def lineBot(op):
                         cl.kickoutFromGroup(op.param1,[op.param2])
                     except:
                         kl.kickoutFromGroup(op.param1,[op.param2])
+        if msg.contentType == 7:
+               if settings["checkSticker"] == True:
+                    stk_id = msg.contentMetadata['STKID']
+                    stk_ver = msg.contentMetadata['STKVER']
+                    pkg_id = msg.contentMetadata['STKPKGID']
+                    path = "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/ANDROID/sticker.png;compress=true".format(stk_id)
+                    ret_ = "<<貼圖資料>>"
+                    ret_ += "\n[貼圖ID] : {}".format(stk_id)
+                    ret_ += "\n[貼圖包ID] : {}".format(pkg_id)
+                    ret_ += "\n[貼圖網址] : line://shop/detail/{}".format(pkg_id)
+                    ret_ += "\n[貼圖圖片網址]：https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/ANDROID/sticker.png;compress=true".format(stk_id)
+                    ret_ += "\n<<完>>"
+                    cl.sendMessage(to, str(ret_))
+                    cl.sendImageWithURL(to, path)
         if op.type == 13:
             contact1 = cl.getContact(op.param2)
             contact2 = cl.getContact(op.param3)
             group = cl.getGroup(op.param1)
             print ("[ 13 ] 通知邀請群組: " + str(group.name) + "\n邀請者: " + contact1.displayName + "\n被邀請者" + contact2.displayName)
-            if settings['inviteprotect'][op.param1] == True:
-                if op.param2 in settings['admin'] or op.param2 in settings['bot']:
-                    pass
-                else:
-                    cl.sendMessage(op.param1,"[警告]\n邀請保護開啟中......掰掰~~~")
-                    try:
-                        cl.kickoutFromGroup(op.param1,op.param2)
-                    except:
-                        kl.kickoutFromGroup(op.param1,op.param2)
+            if op.param2 in settings['admin'] or op.param2 in settings['bot']:
+                pass
+            else:
+                cl.sendMessage(op.param1,"[警告]\n邀請保護開啟中......掰掰~~~")
+                try:
+                    cl.kickoutFromGroup(op.param1,op.param2)
+                except:
+                    kl.kickoutFromGroup(op.param1,op.param2)
             if op.param2 in settings['blacklist']:
                 cl.cancelGroupInvitation(op.param1, op.param3)
                 cl.sendMessage(op.param1,"[警告]\n你位於黑單中並不能邀請人")
@@ -119,38 +131,33 @@ def lineBot(op):
                 cl.cancelGroupInvitation(op.param1, op.param3)
                 cl.sendMessage(op.param1, "[警告]\n邀請名單位於黑單中!!!有疑問請私訊作者")
                 cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
-            if clMID == op.param3:
-                print ("進入群組: " + str(group.name))
-                cl.acceptGroupInvitation(op.param1)
-                cl.sendMessage(op.param1, "歡迎使用由Arasi開發的ArasiproV3!!!\nMy creator:")
-                time.sleep(1)
-                cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
-                if group.preventedJoinByTicket == True:
-                    group.preventedJoinByTicket = False
+            if clMID in op.param3:
+                if settings["autoJoin"] == True:
+                    cl.acceptGroupInvitation(op.param1)
+                    cl.sendMessage(op.param1, "歡迎使用由Arasi開發的ArasiproV3!!!\nMy creator:")
+                    cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
+                    if group.preventedJoinByTicket == True:
+                        group.preventedJoinByTicket = False
+                        cl.updateGroup(group)
+                    else:
+                        pass
+                    ticket = cl.reissueGroupTicket(op.param1)
+                    kl.acceptGroupInvitationByTicket(op.param1, ticket)
+                    group.preventedJoinByTicket = True
                     cl.updateGroup(group)
-                else:
-                    pass
-                ticket = cl.reissueGroupTicket(op.param1)
-                kl.acceptGroupInvitationByTicket(op.param1, ticket)
-                group.preventedJoinByTicket = True
-                cl.updateGroup(group)
         if op.type == 19:
             contact1 = cl.getContact(op.param2)
             group = cl.getGroup(op.param1)
             contact2 = cl.getContact(op.param3)
-            GS = group.creator.mid
             print ("[19]有人把人踢出群組 群組名稱: " + str(group.name) +"\n踢人者: " + contact1.displayName + "\nMid: " + contact1.mid + "\n被踢者" + contact2.displayName + "\nMid:" + contact2.mid )
             if settings["protect"] == True:
-                if op.param2 in settings['admin'] or op.param2 in settings['bot'] or op.param2 == GS or op.param2 in settings['gm']:
+                if op.param2 in settings['admin'] or op.param2 in settings['bot']:
                     pass
                 else:
                     try:
                         cl.kickoutFromGroup(op.param1,[op.param2])
                     except:
-                        try:
-                            kl.kickoutFromGroup(op.param1,[op.param2])
-                        except:
-                            pass
+                        kl.kickoutFromGroup(op.param1,[op.param2])
                     if op.param3 in settings['bot']:
                         try:
                             ticket = cl.reissueGroupTicket(op.param1)
@@ -212,49 +219,14 @@ def lineBot(op):
             elif msg.contentType == 16:
                 if settings["timeline"] == True:
                     msg.contentType = 0
-                    msg.text = "URLat\n" + msg.contentMetadata["postEndUrl"]
+                    ret_ += "[文章持有者]\n " + msg.contentMetadata["serviceName"] 
+                    ret_ += "\n[文章預覽]\n " + msg.contentMetadata["text"]
+                    ret_ += "\n[文章網址]\n " + msg.contentMetadata["postEndUrl"]
+                    print (msg.contentMetadata)
                     cl.sendMessage(msg.to,msg.text)
             if msg.contentType == 0:
                 if text is None:
                     return
-            grp = cl.getGroup(to)
-            GS = grp.creator.mid
-            if sender in GS or sender in settings['gm'] or sender in settings['admin']:
-                if msg.text.lower().startswith("add_gm "):
-                    if 'MENTION' in msg.contentMetadata.keys()!= None:
-                        names = re.findall(r'@(\w+)', text)
-                        mention = ast.literal_eval(msg.contentMetadata['MENTION'])
-                        mentionees = mention['MENTIONEES']
-                        lists = []
-                        for mention in mentionees:
-                            if mention["M"] not in lists:
-                                lists.append(mention["M"])
-                        for ls in lists:
-                            if to not in settings['gm']:
-                                settings['gm'][to] = {}
-                            if ls not in settings['gm'][to]: 
-                                settings['gm'][to][ls] = True
-                            with open('temp.json', 'w') as fp:
-                                json.dump(settings, fp, sort_keys=True, indent=4)
-                                cl.sendMessage(to, "成功新增Group Master權限")
-                elif msg.text.lower().startswith("del_gm "):
-                    if 'MENTION' in msg.contentMetadata.keys()!= None:
-                        names = re.findall(r'@(\w+)', text)
-                        mention = ast.literal_eval(msg.contentMetadata['MENTION'])
-                        mentionees = mention['MENTIONEES']
-                        lists = []
-                        for mention in mentionees:
-                            if mention["M"] not in lists:
-                                lists.append(mention["M"])
-                        for ls in lists:
-                            if ls in settings['gm'][to]:
-                                del settings['gm'][to][ls]
-                                with open('temp.json', 'w') as fp:
-                                    json.dump(settings, fp, sort_keys=True, indent=4)
-                                    cl.sendMessage(to, "成功移除Group Master權限")
-                                    cl.sendContact(to, ls)
-                            else:
-                                cl.sendMessage(to, "此人並未擁有Group Master權限")
             if sender in settings['admin']:
                 if msg.text.lower().startswith("add_admin "):
                     if 'MENTION' in msg.contentMetadata.keys()!= None:
@@ -378,34 +350,72 @@ def lineBot(op):
                     settings["contact"] = False
                     cl.sendMessage(to, "查看好友資料詳情關閉")
                 elif text.lower() == 'inviteprotect on':
-                    settings["inviteprotect"][to] = True
+                    settings["inviteprotect"] = True
                     cl.sendMessage(to, "群組邀請保護已開啟")
-                    with open('temp.json', 'w') as fp:
-                        json.dump(settings, fp, sort_keys=True, indent=4)
                 elif text.lower() == 'inviteprotect off':
-                    settings["inviteprotect"][to] = False
+                    settings["inviteprotect"] = False
                     cl.sendMessage(to, "群組邀請保護已關閉")
-                    with open('temp.json', 'w') as fp:
-                        json.dump(settings, fp, sort_keys=True, indent=4)
+                elif text.lower() == 'protect on':
+                    settings["protect"] = True
+                    cl.sendMessage(to, "群組保護已開啟")
+                elif text.lower() == 'protect off':
+                    settings["protect"] = False
+                    cl.sendMessage(to, "群組保護已關閉")
                 elif text.lower() == 'qr on':
-                    settings["qrprotect"][to] = True
+                    settings["qrprotect"] = True
                     cl.sendMessage(to, "群組網址保護已開啟")
-                    with open('temp.json', 'w') as fp:
-                        json.dump(settings, fp, sort_keys=True, indent=4)
                 elif text.lower() == 'qr off':
-                    settings["qrprotect"][to] = False
+                    settings["qrprotect"] = False
                     cl.sendMessage(to, "群組網址保護已關閉")
-                    with open('temp.json', 'w') as fp:
-                        json.dump(settings, fp, sort_keys=True, indent=4)
                 elif text.lower() == 'reread on':
                     settings["reread"] = True
                     cl.sendMessage(to, "查詢收回開啟")
                 elif text.lower() == 'reread off':
                     settings["reread"] = False
                     cl.sendMessage(to, "查詢收回關閉")
+                elif text.lower() == 'dm on':
+                    settings["detectMention"] = True
+                    cl.sendMessage(to, "自動回應開啟")
+                elif text.lower() == 'dm off':
+                    settings["detectMention"] = False
+                    cl.sendMessage(to, "自動回應關閉")
+                elif text.lower() == 'ck on':
+                    settings["checkSticker"] = True
+                    cl.sendMessage(to, "確認貼圖開啟")
+                elif text.lower() == 'ck off':
+                    settings["checkSticker"] = False
+                    cl.sendMessage(to, "確認貼圖關閉")
                 elif text.lower() == 'rebot':
                     cl.sendMessage(to, "重新啟動")
                     restartBot()
+                elif text.lower() == 'set':
+                    try:
+                        ret_ = "[ 設定 ]"
+                        if settings["autoAdd"] == True: ret_ += "\n自動加入好友 [ON]"
+                        else: ret_ += "\n自動加入好友 [OFF]"
+                        if settings["autoJoin"] == True: ret_ += "\n自動加入群組 [ON]"
+                        else: ret_ += "\n自動加入群組 [OFF]"
+                        if settings["autoLeave"] == True: ret_ += "\n自動離開副本 [ON]"
+                        else: ret_ += "\n自動離開副本 [OFF]"
+                        if settings["autoRead"] == True: ret_ += "\n自動已讀 [ON]"
+                        else: ret_ += "\n自動已讀 [OFF]"
+                        if settings["protect"] == True: ret_ += "\n群組保護開啟 [ON]"
+                        else: ret_ += "\n群組保護關閉 [OFF]"
+                        if settings["inviteprotect"] == True: ret_ += "\n群組邀請保護 [ON]"
+                        else: ret_ += "\n群組邀請保護 [OFF]"
+                        if settings["qrprotect"] == True: ret_ += "\n群組網址保護 [ON]"
+                        else: ret_ += "\n群組網址保護 [OFF]"
+                        if settings["contact"] == True: ret_ += "\n詳細資料 [ON]"
+                        else: ret_ += "\n詳細資料 [OFF]"
+                        if settings["reread"] == True: ret_ += "\n查詢收回開啟 [ON]"
+                        else: ret_ += "\n查詢收回關閉 [OFF]"
+                        if settings["detectMention"] == False: ret_ += "\n標註回覆開啟 [ON]"
+                        else: ret_ += "\n標註回覆關閉 [OFF]"
+                        if settings["checkSticker"] == True: ret_ += "\n貼圖資料查詢開啟 [ON]"
+                        else: ret_ += "\n貼圖資料查詢關閉 [OFF]
+                        cl.sendMessage(to, str(ret_))
+                    except Exception as e:
+                        cl.sendMessage(msg.to, str(e))
                 elif msg.text in ["killban"]:
                     if msg.toType == 2:
                         group = cl.getGroup(to)
@@ -419,7 +429,9 @@ def lineBot(op):
                             return
                         for jj in matched_list:
                             cl.kickoutFromGroup(to, [jj])
-cl.sendMessage(to, "黑名單以踢除")
+                            cl.sendMessage(to, "黑名單以踢除")
+            if msg.text in settings['react']:
+                cl.sendMessage(to, settings['react'][msg.text])
             if text.lower() == 'speed':
                 start = time.time()
                 cl.sendMessage(to, "processing......")
@@ -449,7 +461,7 @@ cl.sendMessage(to, "黑名單以踢除")
                             mc += "-> " + cl.getContact(mi_d).displayName + "\n"
                         cl.sendMessage(to, mc)
                     except:
-                        pass
+                        cl.sendMessage(to, "error")
             elif "banlist" in msg.text:
                 if settings["blacklist"] == {}:
                     cl.sendMessage(to, "沒有黑名單")
@@ -472,6 +484,11 @@ cl.sendMessage(to, "黑名單以踢除")
                         cl.sendMessage(to, mc)
                     except:
                         pass
+            elif text.lower() == 'reactlist':
+                ret = "關鍵字列表"
+                for name in settings['react']:
+                    ret += name + "\n"
+                cl.sendMessage("to", ret)
             elif text.lower() == 'runtime':
                 timeNow = time.time()
                 runtime = timeNow - botStart
@@ -486,12 +503,12 @@ cl.sendMessage(to, "黑名單以踢除")
                     group = cl.getGroup(to)
                     contactlist = cl.getAllContactIds()
                     blockedlist = cl.getBlockedContactIds()
-                    ret_ = "[ 利用情報 ]"
-                    ret_ += "\n私の名前は : {}".format(contact.displayName)
-                    ret_ += "\nグループ名 : {}".format(str(group.name))
-                    ret_ += "\n現在のバージョン: alpha v1.0.0"
-                    ret_ += "\n作成者 : {}".format(creator.displayName)
-                    ret_ += "\nURLを追加 : http://line.naver.jp/ti/p/~ee27676271"
+                    ret_ = "<<利用情報>>"
+                    ret_ += "\n[私の名前は] : {}".format(contact.displayName)
+                    ret_ += "\n[グループ名] : {}".format(str(group.name))
+                    ret_ += "\n[現在のバージョン]: alpha v1.0.0"
+                    ret_ += "\n[作成者] : {}".format(creator.displayName)
+                    ret_ += "\n[URLを追加] : http://line.naver.jp/ti/p/~ee27676271"
                     cl.sendMessage(to, str(ret_))
                 except Exception as e:
                     cl.sendMessage(msg.to, str(e))
@@ -655,6 +672,43 @@ cl.sendMessage(to, "黑名單以踢除")
                     no += 1
                 ret_ += "\n[總共 {} 個群組]".format(str(len(groups)))
                 cl.sendMessage(to, str(ret_))
+            elif msg.text.lower().startswith("add_react"):
+                list_ = msg.text.split(":")
+                if list_[1] not in settings['react']:
+                    try:
+                        settings['react'][list_[1]] = list_[2]
+                        with open('temp.json', 'w') as fp:
+                            json.dump(settings, fp, sort_keys=True, indent=4)
+                            cl.sendMessage(to, "[新增回應]\n" + "關鍵字: " + list_[1] + "\n回應: " + list_[2])
+                    except:
+                        cl.sendMessage(to, "[ERROR]\n" + "新增關鍵字失敗")
+                else:
+                    cl.sendMessage(to, "[ERROR]\n" + "關鍵字已存在")
+            elif msg.text.lower().startswith("del_react"):
+                list_ = msg.text.split(":")
+                if list_[1] in settings['react']:
+                    try:
+                        del settings['react'][list_[1]]
+                        with open('temp.json', 'w') as fp:
+                            json.dump(settings, fp, sort_keys=True, indent=4)
+                            cl.sendMessage(to, "[刪除關鍵字]\n成功刪除關鍵字!!!\n關鍵字: " + list_[1])
+                    except:
+                        cl.sendMessage(to, "[ERROR]\n刪除關鍵字失敗!!!")
+                else:
+                    cl.sendMessage(to, "[ERROR]\n指定刪除的關鍵字並不在列表中!!!")
+            elif msg.text.lower().startswith("renew_react"):
+                list_ = msg.text.split(":")
+                if list_[1] in settings['react']:
+                    try:
+                        del settings['react'][list_[1]]
+                        settings['react'][list_[1]] = list_[2]
+                        with open('temp.json', 'w') as fp:
+                            json.dump(settings, fp, sort_keys=True, indent=4)
+                            cl.sendMessage(to, "[更新回應]\n成功更新回應!!!\n關鍵字: " + list_[1] + "\n回應: " + list_[2])
+                    except:
+                        cl.sendMessage(to, "[ERROR]\n更新關鍵字失敗!!!")
+                else:
+                    cl.sendMessage(to, "[ERROR]\n指定更新關鍵字並不在列表中!!!") 
         if op.type == 26:
             try:
                 msg = op.message
@@ -711,8 +765,9 @@ cl.sendMessage(to, "黑名單以踢除")
                             if clMID in mention["M"]:
                                 if settings["detectMention"] == True:
                                     contact = cl.getContact(sender)
-                                    cl.sendMessage(to, "？")
                                     sendMessageWithMention(to, contact.mid)
+                                    cl.sendMessage(to, "安安你好,我是防翻機器人Yukino,有事請找主人")
+                                    cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
                                 break
         if op.type == 55:
             print ("[ 55 ] 通知讀取消息")
