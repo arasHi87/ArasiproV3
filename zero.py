@@ -8,9 +8,9 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 from gtts import gTTS
 from googletrans import Translator
 botStart = time.time()
-cl = LINE()
+cl = LINE("Esuz2qyCqurzcloYtbC2.PlwfKk3wx32bfqIuqQKj8G.462KVk3ZsUz5DSbWRPICKHl08FfDETQb1G1pcaRv49I=")
 cl.log("Auth Token : " + str(cl.authToken))
-kl = LINE()
+kl = LINE("EscdTFSrbUnHl0Y7GfL8.HE6aZ7ktwzuq0mf6SLPCMa.zOsRvB3MzRtnHoi3f6YiXS4E3ic5tlQJOv9Fvjr5+/s=")
 kl.log("Auth Token : " + str(kl.authToken))
 oepoll = OEPoll(cl)
 readOpen = codecs.open("read.json","r","utf-8")
@@ -75,7 +75,7 @@ def lineBot(op):
                 cl.findAndAddContactsByMid(op.param1)
                 cl.sendMessage(op.param1, "安安！{} 感謝您加我為好友！".format(str(contact.displayName)))
                 cl.sendMessage(op.param1, "咱是由Arasi所開發的ArasiproV3\n歡迎邀我加入群組唷！\n如有什麼問題麻煩私訊作者")
-                cl.sendContact(op.param1, "u52906c3d95b296a8ef133af56d7383a4")
+                cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
         if op.type == 24:
             print ("[ 24 ] 通知離開副本")
             if settings["autoLeave"] == True:
@@ -97,20 +97,6 @@ def lineBot(op):
                         cl.kickoutFromGroup(op.param1,[op.param2])
                     except:
                         kl.kickoutFromGroup(op.param1,[op.param2])
-        if msg.contentType == 7:
-               if settings["checkSticker"] == True:
-                    stk_id = msg.contentMetadata['STKID']
-                    stk_ver = msg.contentMetadata['STKVER']
-                    pkg_id = msg.contentMetadata['STKPKGID']
-                    path = "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/ANDROID/sticker.png;compress=true".format(stk_id)
-                    ret_ = "<<貼圖資料>>"
-                    ret_ += "\n[貼圖ID] : {}".format(stk_id)
-                    ret_ += "\n[貼圖包ID] : {}".format(pkg_id)
-                    ret_ += "\n[貼圖網址] : line://shop/detail/{}".format(pkg_id)
-                    ret_ += "\n[貼圖圖片網址]：https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/ANDROID/sticker.png;compress=true".format(stk_id)
-                    ret_ += "\n<<完>>"
-                    cl.sendMessage(to, str(ret_))
-                    cl.sendImageWithURL(to, path)
         if op.type == 13:
             contact1 = cl.getContact(op.param2)
             contact2 = cl.getContact(op.param3)
@@ -131,20 +117,20 @@ def lineBot(op):
                 cl.cancelGroupInvitation(op.param1, op.param3)
                 cl.sendMessage(op.param1, "[警告]\n邀請名單位於黑單中!!!有疑問請私訊作者")
                 cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
-            if clMID in op.param3:
-                if settings["autoJoin"] == True:
-                    cl.acceptGroupInvitation(op.param1)
-                    cl.sendMessage(op.param1, "歡迎使用由Arasi開發的ArasiproV3!!!\nMy creator:")
-                    cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
-                    if group.preventedJoinByTicket == True:
-                        group.preventedJoinByTicket = False
-                        cl.updateGroup(group)
-                    else:
-                        pass
-                    ticket = cl.reissueGroupTicket(op.param1)
-                    kl.acceptGroupInvitationByTicket(op.param1, ticket)
-                    group.preventedJoinByTicket = True
+        if op.type == 12:
+            if settings["autoJoin"] == True:
+                cl.acceptGroupInvitation(op.param1)
+                cl.sendMessage(op.param1, "歡迎使用由Arasi開發的ArasiproV3!!!\nMy creator:")
+                cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
+                if group.preventedJoinByTicket == True:
+                    group.preventedJoinByTicket = False
                     cl.updateGroup(group)
+                else:
+                    pass
+                ticket = cl.reissueGroupTicket(op.param1)
+                kl.acceptGroupInvitationByTicket(op.param1, ticket)
+                group.preventedJoinByTicket = True
+                cl.updateGroup(group)
         if op.type == 19:
             contact1 = cl.getContact(op.param2)
             group = cl.getGroup(op.param1)
@@ -216,14 +202,28 @@ def lineBot(op):
                         except:
                             cu = ""
                             cl.sendMessage(msg.to,"[名稱]:\n" + contact.displayName + "\n[mid]:\n" + msg.contentMetadata["mid"] + "\n[個簽]:\n" + contact.statusMessage + "\n[頭貼網址]:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n[封面網址]:\n" + str(cu))
+            elif msg.contentType == 7:
+                if settings["checkSticker"] == True:
+                    stk_id = msg.contentMetadata['STKID']
+                    stk_ver = msg.contentMetadata['STKVER']
+                    pkg_id = msg.contentMetadata['STKPKGID']
+                    path = "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/ANDROID/sticker.png;compress=true".format(stk_id)
+                    ret_ = "<<貼圖資料>>"
+                    ret_ += "\n[貼圖ID] : {}".format(stk_id)
+                    ret_ += "\n[貼圖包ID] : {}".format(pkg_id)
+                    ret_ += "\n[貼圖網址] : line://shop/detail/{}".format(pkg_id)
+                    ret_ += "\n[貼圖圖片網址]：https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/ANDROID/sticker.png;compress=true".format(stk_id)
+                    ret_ += "\n<<完>>"
+                    cl.sendMessage(to, str(ret_))
+                    cl.sendImageWithURL(to, path)
+                    cl.sendMessage(op.param1,ret_)
             elif msg.contentType == 16:
                 if settings["timeline"] == True:
                     msg.contentType = 0
-                    ret_ += "[文章持有者]\n " + msg.contentMetadata["serviceName"] 
+                    ret_ = "[文章持有者]\n " + msg.contentMetadata["serviceName"] 
                     ret_ += "\n[文章預覽]\n " + msg.contentMetadata["text"]
                     ret_ += "\n[文章網址]\n " + msg.contentMetadata["postEndUrl"]
-                    print (msg.contentMetadata)
-                    cl.sendMessage(msg.to,msg.text)
+                    cl.sendMessage(msg.to, ret_)
             if msg.contentType == 0:
                 if text is None:
                     return
@@ -340,6 +340,12 @@ def lineBot(op):
                 elif text.lower() == 'add off':
                     settings["autoAdd"] = False
                     cl.sendMessage(to, "自動加入好友已關閉")
+                elif text.lower() == 'ar on':
+                    settings["autoRead"] = True
+                    cl.sendMessage(to, "自動已讀已開啟")
+                elif text.lower() == 'ar off':
+                    settings["autoRead"] = False
+                    cl.sendMessage(to, "自動已讀已關閉")
                 elif text.lower() == 'join on':
                     settings["autoJoin"] = True
                     cl.sendMessage(to, "自動加入群組已開啟")
@@ -395,8 +401,9 @@ def lineBot(op):
                     settings["checkSticker"] = False
                     cl.sendMessage(to, "確認貼圖關閉")
                 elif text.lower() == 'rebot':
-                    cl.sendMessage(to, "重新啟動")
+                    cl.sendMessage(to, "重新啟動中......")
                     restartBot()
+                    cl.sendMessage(to, "重新啟動完成!!!")
                 elif text.lower() == 'set':
                     try:
                         ret_ = "[ 設定 ]"
@@ -421,7 +428,7 @@ def lineBot(op):
                         if settings["detectMention"] == False: ret_ += "\n標註回覆開啟 [ON]"
                         else: ret_ += "\n標註回覆關閉 [OFF]"
                         if settings["checkSticker"] == True: ret_ += "\n貼圖資料查詢開啟 [ON]"
-                        else: ret_ += "\n貼圖資料查詢關閉 [OFF]
+                        else: ret_ += "\n貼圖資料查詢關閉 [OFF]"
                         cl.sendMessage(to, str(ret_))
                     except Exception as e:
                         cl.sendMessage(msg.to, str(e))
@@ -776,6 +783,7 @@ def lineBot(op):
                                     contact = cl.getContact(sender)
                                     sendMessageWithMention(to, contact.mid)
                                     cl.sendMessage(to, "安安你好,我是防翻機器人Yukino,有事請找主人")
+                                    time.sleep(0.5)
                                     cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
                                 break
         if op.type == 55:

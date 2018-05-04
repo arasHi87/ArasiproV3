@@ -5,8 +5,9 @@
     "autoAdd": true,
     "autoJoin": true,
     "autoLeave": false,
-    "autoRead": false,
+    "autoRead": true,
     "blacklist": {
+        "ua4b58590add65f7d8115089442a909f2": true,
         "ua8fe07daf59c683486005b2352975f53": true
     },
     "bot": {
@@ -14,7 +15,7 @@
         "ub7babc6a8fd9943f96342c84abe09670": true
     },
     "checkSticker": false,
-    "contact": true,
+    "contact": false,
     "detectMention": false,
     "gm": {
         "c02fb6eba0220cef6c6f82d8e15c458b6": "u8efc93824990b63d86eebb930ab97360"
@@ -27,6 +28,7 @@
     "react": {
         "yukino的作者": "是Arasi!!!",
         "伊嵐": "是帥哥",
+        "作者大大": "我的作者是帥哥",
         "嵐喵": "是個超級大變態",
         "師父": "87一個",
         "桃": "看起來像變態",
