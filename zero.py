@@ -315,6 +315,15 @@ def lineBot(op):
                             elapsed_time = time.time() - start
                             cl.sendMessage(to, "已取消完成\n取消時間: %s秒" % (elapsed_time))
                             cl.sendMessage(to, "取消人數:" + sinvitee)
+                elif text.lower() == 'yukino:bye':
+                    if msg.toType == 2:
+                        ginfo = cl.getGroup(to)
+                        try:
+                            cl.sendMessage(to, "各位掰掰~")
+                            cl.leaveGroup(to)
+                            kl.leaveGroup(to)
+                        except:
+                            pass
                 elif "Fbc:" in msg.text:
                     bctxt = text.replace("Fbc:","")
                     t = cl.getAllContactIds()
