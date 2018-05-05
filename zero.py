@@ -8,9 +8,9 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 from gtts import gTTS
 from googletrans import Translator
 botStart = time.time()
-cl = LINE("Esuz2qyCqurzcloYtbC2.PlwfKk3wx32bfqIuqQKj8G.462KVk3ZsUz5DSbWRPICKHl08FfDETQb1G1pcaRv49I=")
+cl = LINE("EswRVUrDPN45Cn3Y0JPb.QNWwfjCjLYn4uvDJV0ig2W.45tq8Na4Ctnu6hfWBc7Cf+LCr2stNAPu7gkF/dpUllg=")
 cl.log("Auth Token : " + str(cl.authToken))
-kl = LINE("EscdTFSrbUnHl0Y7GfL8.HE6aZ7ktwzuq0mf6SLPCMa.zOsRvB3MzRtnHoi3f6YiXS4E3ic5tlQJOv9Fvjr5+/s=")
+kl = LINE("EshRIOXcyZvJO8kx57Y2.I2sbm8nsgfrw9MDeDR9o4G.TBoAD3GUUkPsowvvgWOgtSCGKbJUSyueVfRJ4kxfuz0=")
 kl.log("Auth Token : " + str(kl.authToken))
 oepoll = OEPoll(cl)
 readOpen = codecs.open("read.json","r","utf-8")
@@ -74,7 +74,7 @@ def lineBot(op):
             if settings["autoAdd"] == True:
                 cl.findAndAddContactsByMid(op.param1)
                 cl.sendMessage(op.param1, "安安！{} 感謝您加我為好友！".format(str(contact.displayName)))
-                cl.sendMessage(op.param1, "咱是由Arasi所開發的ArasiproV3\n歡迎邀我加入群組唷！\n如有什麼問題麻煩私訊作者")
+                cl.sendMessage(op.param1, "咱是由Arasi所開發的ArasiproV3\n歡迎邀請我加入群組喔!!!!\n如有問題請麻煩私訊作者")
                 cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
         if op.type == 24:
             print ("[ 24 ] 通知離開副本")
@@ -102,25 +102,11 @@ def lineBot(op):
             contact2 = cl.getContact(op.param3)
             group = cl.getGroup(op.param1)
             print ("[ 13 ] 通知邀請群組: " + str(group.name) + "\n邀請者: " + contact1.displayName + "\n被邀請者" + contact2.displayName)
-            if op.param2 in settings['admin'] or op.param2 in settings['bot']:
-                pass
-            else:
-                cl.sendMessage(op.param1,"[警告]\n邀請保護開啟中......掰掰~~~")
-                try:
-                    cl.kickoutFromGroup(op.param1,op.param2)
-                except:
-                    kl.kickoutFromGroup(op.param1,op.param2)
-            if op.param2 in settings['blacklist']:
-                cl.cancelGroupInvitation(op.param1, op.param3)
-                cl.sendMessage(op.param1,"[警告]\n你位於黑單中並不能邀請人")
-            if op.param3 in settings['blacklist']:
-                cl.cancelGroupInvitation(op.param1, op.param3)
-                cl.sendMessage(op.param1, "[警告]\n邀請名單位於黑單中!!!有疑問請私訊作者")
-                cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
-        if op.type == 12:
-            if settings["autoJoin"] == True:
+            if clMID in op.param3:
+                print ("進入群組: " + str(group.name))
                 cl.acceptGroupInvitation(op.param1)
                 cl.sendMessage(op.param1, "歡迎使用由Arasi開發的ArasiproV3!!!\nMy creator:")
+                time.sleep(1)
                 cl.sendContact(op.param1, "u85ee80cfb293599510d0c17ab25a5c98")
                 if group.preventedJoinByTicket == True:
                     group.preventedJoinByTicket = False
@@ -203,10 +189,14 @@ def lineBot(op):
                             cu = ""
                             cl.sendMessage(msg.to,"[名稱]:\n" + contact.displayName + "\n[mid]:\n" + msg.contentMetadata["mid"] + "\n[個簽]:\n" + contact.statusMessage + "\n[頭貼網址]:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n[封面網址]:\n" + str(cu))
             elif msg.contentType == 7:
-                if settings["checkSticker"] == True:
-                    stk_id = msg.contentMetadata['STKID']
-                    stk_ver = msg.contentMetadata['STKVER']
-                    pkg_id = msg.contentMetadata['STKPKGID']
+                stk_id = msg.contentMetadata['STKID']
+                stk_ver = msg.contentMetadata['STKVER']
+                pkg_id = msg.contentMetadata['STKPKGID']
+                number = str(stk_id) + str(pkg_id)
+                if number in settings['sr']:
+                    react = settings['sr'][number]
+                    cl.sendMessage(to, str(react))
+                elif settings["checkSticker"] == True:
                     path = "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/ANDROID/sticker.png;compress=true".format(stk_id)
                     ret_ = "<<貼圖資料>>"
                     ret_ += "\n[貼圖ID] : {}".format(stk_id)
@@ -403,7 +393,6 @@ def lineBot(op):
                 elif text.lower() == 'rebot':
                     cl.sendMessage(to, "重新啟動中......")
                     restartBot()
-                    cl.sendMessage(to, "重新啟動完成!!!")
                 elif text.lower() == 'set':
                     try:
                         ret_ = "[ 設定 ]"
@@ -501,10 +490,10 @@ def lineBot(op):
                     except:
                         pass
             elif text.lower() == 'reactlist':
-                ret = "關鍵字列表"
+                ret = "[關鍵字列表]\n"
                 for name in settings['react']:
-                    ret += name + "\n"
-                cl.sendMessage("to", ret)
+                    ret +="->" + name + "\n"
+                cl.sendMessage(to, ret)
             elif text.lower() == 'runtime':
                 timeNow = time.time()
                 runtime = timeNow - botStart
@@ -688,6 +677,23 @@ def lineBot(op):
                     no += 1
                 ret_ += "\n[總共 {} 個群組]".format(str(len(groups)))
                 cl.sendMessage(to, str(ret_))
+            elif text.lower() == 'status':
+                contact = cl.getContact(sender)
+                ret_ = "[使用者狀態]\n"
+                ret_ += '使用者名稱 => ' + contact.displayName + "\n"
+                if sender in settings['admin']:
+                    ret_ += '使用者權限 => ' + 'Admin\n'
+                    ret_ += '使用者限制 => ' + '無限制\n'
+                    ret_ += '指令權限 => ' + 'All useful'
+                elif sender in settings['blacklist']:
+                    ret_ += '使用者權限 => ' + 'Blacklist\n'
+                    ret_ += '使用者限制 => ' + '全功能制限\n'
+                    ret_ += '指令權限 => ' + 'All useless\n'
+                else:
+                    ret_ += '使用者權限 => ' + 'Normal\n'
+                    ret_ += '使用者限制 => ' + '普通限制\n'
+                    ret_ += '指令權限 => ' + 'Only normal\n'
+                cl.sendMessage(to, ret_)
             elif msg.text.lower().startswith("add_react"):
                 list_ = msg.text.split(":")
                 if list_[1] not in settings['react']:
@@ -724,7 +730,47 @@ def lineBot(op):
                     except:
                         cl.sendMessage(to, "[ERROR]\n更新關鍵字失敗!!!")
                 else:
-                    cl.sendMessage(to, "[ERROR]\n指定更新關鍵字並不在列表中!!!") 
+                    cl.sendMessage(to, "[ERROR]\n指定更新關鍵字並不在列表中!!!")
+            elif msg.text.lower().startswith("add_sr"):
+                list_ = msg.text.split(":")
+                number = str(list_[1]) + str(list_[2])
+                if number not in settings['sr']:
+                    try:
+                        settings['sr'][number] = list_[3]
+                        with open('temp.json', 'w') as fp:
+                            json.dump(settings, fp, sort_keys=True, indent=4)
+                            cl.sendMessage(to, "[新增貼圖回應]\n" + "回應: " + list_[3] + "\n系統辨識碼: " + number)
+                    except:
+                        cl.sendMessage(to, "[ERROR]\n" + "新增貼圖關鍵字失敗")
+                else:
+                    cl.sendMessage(to, "[ERROR]\n" + "貼圖關鍵字已存在")
+            elif msg.text.lower().startswith("del_sr"):
+                list_ = msg.text.split(":")
+                number = str(list_[1]) + str(list_[2])
+                if number in settings['sr']:
+                    try:
+                        del settings['sr'][number]
+                        with open('temp.json', 'w') as fp:
+                            json.dump(settings, fp, sort_keys=True, indent=4)
+                            cl.sendMessage(to, "[刪除貼圖關鍵字]\n成功刪除貼圖關鍵字!!!\n系統辨識碼: " + number)
+                    except:
+                        cl.sendMessage(to, "[ERROR]\n刪除貼圖關鍵字失敗!!!")
+                else:
+                    cl.sendMessage(to, "[ERROR]\n指定刪除的貼圖關鍵字並不在列表中!!!")
+            elif msg.text.lower().startswith("renew_sr"):
+                list_ = msg.text.split(":")
+                number = str(list_[1]) + str(list_[2])
+                if number in settings['sr']:
+                    try:
+                        del settings['sr'][number]
+                        settings['sr'][number] = list_[3]
+                        with open('temp.json', 'w') as fp:
+                            json.dump(settings, fp, sort_keys=True, indent=4)
+                            cl.sendMessage(to, "[更新貼圖回應]\n成功更新貼圖回應!!!\n回應: " + list_[3] + "\n系統辨識碼: " + number)
+                    except:
+                        cl.sendMessage(to, "[ERROR]\n更新貼圖關鍵字失敗!!!")
+                else:
+                    cl.sendMessage(to, "[ERROR]\n指定更新貼圖關鍵字並不在列表中!!!")
         if op.type == 26:
             try:
                 msg = op.message

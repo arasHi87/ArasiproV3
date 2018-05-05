@@ -1440,3 +1440,57 @@
 [<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
 [<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
 [<module 'time' (built-in)>] TalkException(parameterMap={}, code=0, reason='invalid contactIds')
+[<module 'time' (built-in)>] TalkException(parameterMap=None, code=82, reason='can not send using plain mode')
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(parameterMap={}, code=0, reason='unable to find midType')
+[<module 'time' (built-in)>] TalkException(code=0, reason='invalid mid', parameterMap=None)
+[<module 'time' (built-in)>] list index out of range
+[<module 'time' (built-in)>] list index out of range
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(code=0, parameterMap={}, reason='unable to find midType')
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(code=0, parameterMap={}, reason='unable to find midType')
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'sr'
+[<module 'time' (built-in)>] 'checkSticke'
+[<module 'time' (built-in)>] list index out of range
+[<module 'time' (built-in)>] Upload image failure.
+[<module 'time' (built-in)>] local variable 'stk_id' referenced before assignment
+[<module 'time' (built-in)>] TalkException(code=0, parameterMap={}, reason='unable to find midType')
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(code=0, parameterMap={}, reason='unable to find midType')
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(code=0, parameterMap={}, reason='unable to find midType')
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(code=0, reason='unable to find midType', parameterMap={})
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(code=82, reason='can not send using plain mode', parameterMap=None)
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(code=82, reason='can not send using plain mode', parameterMap=None)
+[<module 'time' (built-in)>] TalkException(code=82, reason='can not send using plain mode', parameterMap=None)
+[<module 'time' (built-in)>] TalkException(code=10, reason='You are not related to group: c02f679c16fc4e06a9393db1a6af5d840', parameterMap={'2': 'c02f679c16fc4e06a9393db1a6af5d840'})
+[<module 'time' (built-in)>] TalkException(code=82, reason='can not send using plain mode', parameterMap=None)
