@@ -2649,3 +2649,255 @@
 [<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
 [<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
 [<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(parameterMap=None, reason='invalid groupId', code=0)
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] local variable 'ret' referenced before assignment
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] local variable 'ret' referenced before assignment
+[<module 'time' (built-in)>] 'c9f4d64d94681b9c6d42da8c282b865ca'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'c9f4d64d94681b9c6d42da8c282b865ca'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'c9f4d64d94681b9c6d42da8c282b865ca'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'serviceName'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] local variable 'ret' referenced before assignment
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'mid'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'mid'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'mid'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'mid'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(reason='invalid mid', parameterMap=None, code=0)
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(reason='invalid mid', parameterMap=None, code=0)
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(reason='can not send using plain mode', parameterMap=None, code=82)
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] TalkException(reason='can not send using plain mode', parameterMap=None, code=82)
+[<module 'time' (built-in)>] TalkException(reason='can not send using plain mode', parameterMap=None, code=82)
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] local variable 'ret' referenced before assignment
+[<module 'time' (built-in)>] TalkException(reason='can not send using plain mode', parameterMap=None, code=82)
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] local variable 'msg' referenced before assignment
+[<module 'time' (built-in)>] TalkException(reason='can not send using plain mode', parameterMap=None, code=82)
+[<module 'time' (built-in)>] TalkException(reason='invalid mid', parameterMap=None, code=0)
+[<module 'time' (built-in)>] TalkException(reason='invalid mid', parameterMap=None, code=0)
+[<module 'time' (built-in)>] TalkException(reason='invalid mid', parameterMap=None, code=0)
+[<module 'time' (built-in)>] TalkException(reason='invalid mid', parameterMap=None, code=0)
+[<module 'time' (built-in)>] local variable 'ret' referenced before assignment
+[<module 'time' (built-in)>] name 'ret' is not defined
+[<module 'time' (built-in)>] TalkException(parameterMap=None, reason='can not send using plain mode', code=82)
+[<module 'time' (built-in)>] sendMessageWithMention() takes from 2 to 4 positional arguments but 5 were given
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'lower'
+[<module 'time' (built-in)>] sendMessageWithMention() takes from 2 to 4 positional arguments but 5 were given
+[<module 'time' (built-in)>] sendMessageWithMention() takes from 2 to 4 positional arguments but 5 were given
+[<module 'time' (built-in)>] TalkException(reason='unable to find midType', parameterMap={}, code=0)
+[<module 'time' (built-in)>] TalkException(parameterMap={}, reason='unable to find midType', code=0)
+[<module 'time' (built-in)>] TalkException(reason='unable to find midType', code=0, parameterMap={})
+[<module 'time' (built-in)>] TalkException(reason='can not send to myself', code=0, parameterMap=None)
+[<module 'time' (built-in)>] 'c7022dcb54e887062d7c3f6c9a2388b48'
+[<module 'time' (built-in)>] name 'sendMessageWithMention' is not defined
+[<module 'time' (built-in)>] name 'sendMessageWithMention' is not defined
+[<module 'time' (built-in)>] name 'sendMessageWithMention' is not defined
+[<module 'time' (built-in)>] name 'sendMessageWithMention' is not defined
+[<module 'time' (built-in)>] name 'sendMessageWithMention' is not defined
+[<module 'time' (built-in)>] name 'sendMessageWithMention' is not defined
+[<module 'time' (built-in)>] TalkException(reason='You are not related to group: c7022dcb54e887062d7c3f6c9a2388b48', code=10, parameterMap={'2': 'c7022dcb54e887062d7c3f6c9a2388b48'})
+[<module 'time' (built-in)>] TalkException(reason='You are not related to group: c7022dcb54e887062d7c3f6c9a2388b48', code=10, parameterMap={'2': 'c7022dcb54e887062d7c3f6c9a2388b48'})
+[<module 'time' (built-in)>] name 'sendMessageWithMention' is not defined
+[<module 'time' (built-in)>] name 'sendMessageWithMention' is not defined
+[<module 'time' (built-in)>] TalkException(reason='You are not related to group: c7022dcb54e887062d7c3f6c9a2388b48', code=10, parameterMap={'2': 'c7022dcb54e887062d7c3f6c9a2388b48'})
+[<module 'time' (built-in)>] sendMessageWithMention() takes from 2 to 4 positional arguments but 5 were given
+[<module 'time' (built-in)>] 'LINE' object has no attribute 'sendMessagesWithMention'
+[<module 'time' (built-in)>] 'c7022dcb54e887062d7c3f6c9a2388b48'
+[<module 'time' (built-in)>] TalkException(parameterMap=None, code=82, reason='can not send using plain mode')
+[<module 'time' (built-in)>] TalkException(parameterMap=None, reason='can not send using plain mode', code=82)
+[<module 'time' (built-in)>] TalkException(parameterMap=None, reason='can not send using plain mode', code=82)
+[<module 'time' (built-in)>] local variable 'to' referenced before assignment
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'mid'
+[<module 'time' (built-in)>] 'cf01904f9a20c779e172ccedced44c43e'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'mid'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'mid'
+[<module 'time' (built-in)>] local variable 'to' referenced before assignment
+[<module 'time' (built-in)>] 'c6674be661f3d7bc4b22bc5533f412751'
+[<module 'time' (built-in)>] TalkException(parameterMap={}, reason='unable to find midType', code=0)
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'mid'
+[<module 'time' (built-in)>] 'serviceName'
+[<module 'time' (built-in)>] 'serviceName'
+[<module 'time' (built-in)>] 'serviceName'
+[<module 'time' (built-in)>] 'serviceName'
+[<module 'time' (built-in)>] 'serviceName'
+[<module 'time' (built-in)>] 'serviceName'
+[<module 'time' (built-in)>] 'serviceName'
+[<module 'time' (built-in)>] 'serviceName'
+[<module 'time' (built-in)>] 'serviceName'
+[<module 'time' (built-in)>] 'NoneType' object has no attribute 'mid'
+[<module 'time' (built-in)>] log() missing 1 required positional argument: 'text'
+[<module 'time' (built-in)>] local variable 'ret_' referenced before assignment
+[<module 'time' (built-in)>] local variable 'ret_' referenced before assignment
+[<module 'time' (built-in)>] log() missing 1 required positional argument: 'text'
+[<module 'time' (built-in)>] name 'start' is not defined
+[<module 'time' (built-in)>] name 'start' is not defined
+[<module 'time' (built-in)>] name 'start' is not defined
+[<module 'time' (built-in)>] name 'start' is not defined
+[<module 'time' (built-in)>] name 'start' is not defined
+[<module 'time' (built-in)>] name 'start' is not defined
+[<module 'time' (built-in)>] name 'start' is not defined
+[<module 'time' (built-in)>] name 'start' is not defined
+[<module 'time' (built-in)>] name 'limit' is not defined
+[<module 'time' (built-in)>] name 'limit' is not defined
+[<module 'time' (built-in)>] name 'limit' is not defined
+[<module 'time' (built-in)>] name 'limit' is not defined
+[<module 'time' (built-in)>] name 'limit' is not defined
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
+[<module 'time' (built-in)>] local variable 'limit' referenced before assignment
