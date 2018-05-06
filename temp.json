@@ -1,47 +1,161 @@
 {
     "admin": {
         "u1d263d768adbdd3b9f4c51833c7c4d29": true,
-        "u85ee80cfb293599510d0c17ab25a5c98": true
+        "u68c9e1bb215370175fc4275249498f52": true,
+        "u85ee80cfb293599510d0c17ab25a5c98": true,
+        "u8efc93824990b63d86eebb930ab97360": true,
+        "ua4b58590add65f7d8115089442a909f2": true,
+        "ub7babc6a8fd9943f96342c84abe09670": true,
+        "uede25fae9fcdcb58f633970ada4f208a": true
     },
     "autoAdd": true,
     "autoJoin": true,
     "autoLeave": false,
     "autoRead": true,
     "blacklist": {
-        "ua4b58590add65f7d8115089442a909f2": true,
-        "ua8fe07daf59c683486005b2352975f53": true
+        "u8534418afd055f51749fccbfe0fa123f": true,
+        "ub22707046ae10f182b787b1f367c9cda": true
     },
     "bot": {
         "u8b648133c352185456f6674476bf4ee2": true,
+        "ua8fe07daf59c683486005b2352975f53": true,
         "uaa7c16149709972378515763bf4206db": true,
         "ub7babc6a8fd9943f96342c84abe09670": true
     },
-    "checkSticker": false,
+    "checkSticker": {},
     "contact": false,
-    "detectMention": false,
-    "gm": {
-        "c02fb6eba0220cef6c6f82d8e15c458b6": "u8efc93824990b63d86eebb930ab97360"
+    "detectMention": {
+        "c1529e3e087e937552012768aa7e9db44": "c1529e3e087e937552012768aa7e9db44"
     },
-    "inviteprotect": true,
+    "gm": {
+        "c02fb6eba0220cef6c6f82d8e15c458b6": {
+            "u8b648133c352185456f6674476bf4ee2": "u8b648133c352185456f6674476bf4ee2"
+        },
+        "c1529e3e087e937552012768aa7e9db44": {
+            "ua8fe07daf59c683486005b2352975f53": "ua8fe07daf59c683486005b2352975f53"
+        }
+    },
+    "inviteprotect": {
+        "c1529e3e087e937552012768aa7e9db44": "c1529e3e087e937552012768aa7e9db44",
+        "c16ea2bbf6ba2fe6b5574662abe64a33d": "c16ea2bbf6ba2fe6b5574662abe64a33d",
+        "c1ebec29d2940eea7a9c705bdf8e03f36": "c1ebec29d2940eea7a9c705bdf8e03f36",
+        "c359e4980a4898b5b748f98a11725b25c": "c359e4980a4898b5b748f98a11725b25c",
+        "c3b9d012670931944fd92e8ae3fda55af": "c3b9d012670931944fd92e8ae3fda55af",
+        "c410ddaa844cf925cc662ba16de3f2757": "c410ddaa844cf925cc662ba16de3f2757",
+        "c418ce0ce70b5a45550116bd220cca671": "c418ce0ce70b5a45550116bd220cca671",
+        "c5f4577d659c8df9fdc34155759348d09": "c5f4577d659c8df9fdc34155759348d09",
+        "c67f1a263badbb44b13589fbf801e6d21": "c67f1a263badbb44b13589fbf801e6d21",
+        "c6889f4dbcab91b831aeae59641adc6c8": "c6889f4dbcab91b831aeae59641adc6c8",
+        "c70b5c5d3551b06805ffdceee3a21ac5e": "c70b5c5d3551b06805ffdceee3a21ac5e",
+        "c7b7a7004840346dca40fcad94c60ee4c": "c7b7a7004840346dca40fcad94c60ee4c",
+        "c7c547f76d286112159e5f41fd3ede154": "c7c547f76d286112159e5f41fd3ede154",
+        "c8392cb1a5a7fdeb7b3d58b1058d99392": "c8392cb1a5a7fdeb7b3d58b1058d99392",
+        "c8fec0e07856a3135d8f69ad9420511f5": "c8fec0e07856a3135d8f69ad9420511f5",
+        "cb25dc4b828026b41cc4eaa0dea60d90a": "cb25dc4b828026b41cc4eaa0dea60d90a",
+        "cc8b33dd86245cd90b242755ac2d8d764": "cc8b33dd86245cd90b242755ac2d8d764",
+        "ccb5bb7d61f7a8c00e821c5e85f1d2c04": "ccb5bb7d61f7a8c00e821c5e85f1d2c04",
+        "ccc595ca25a772988bcf2e959dd214735": "ccc595ca25a772988bcf2e959dd214735",
+        "cd29f3ea4bf263b395458daa491f06843": "cd29f3ea4bf263b395458daa491f06843",
+        "ce3e9e6fc2ba2a096c63e5efcebf626de": "ce3e9e6fc2ba2a096c63e5efcebf626de",
+        "ce3fed2b1c80fd4b5348f493b9fddd4e6": "ce3fed2b1c80fd4b5348f493b9fddd4e6",
+        "ce6f42ed2f636711214cfedcafb4dec3e": "ce6f42ed2f636711214cfedcafb4dec3e",
+        "cf01904f9a20c779e172ccedced44c43e": "cf01904f9a20c779e172ccedced44c43e",
+        "cf9755a99f2337ca971b18c370d147402": "cf9755a99f2337ca971b18c370d147402"
+    },
     "keyCommand": "",
     "lang": "JP",
-    "protect": true,
-    "qrprotect": true,
+    "protect": {
+        "c0249850570be61960d92a254c9445efe": "c0249850570be61960d92a254c9445efe",
+        "c02fb6eba0220cef6c6f82d8e15c458b6": "c02fb6eba0220cef6c6f82d8e15c458b6",
+        "c1529e3e087e937552012768aa7e9db44": "c1529e3e087e937552012768aa7e9db44",
+        "c16ea2bbf6ba2fe6b5574662abe64a33d": "c16ea2bbf6ba2fe6b5574662abe64a33d",
+        "c1dee5f78ecb12403a27a8996fe196323": "c1dee5f78ecb12403a27a8996fe196323",
+        "c1ebec29d2940eea7a9c705bdf8e03f36": "c1ebec29d2940eea7a9c705bdf8e03f36",
+        "c24b9b8883f705803cad809f308ccb7c2": "c24b9b8883f705803cad809f308ccb7c2",
+        "c24f1f83245975d6cca7acfffe3e63203": "c24f1f83245975d6cca7acfffe3e63203",
+        "c3432d742f135409adf48fde7c3ef5508": "c3432d742f135409adf48fde7c3ef5508",
+        "c359e4980a4898b5b748f98a11725b25c": "c359e4980a4898b5b748f98a11725b25c",
+        "c3b9d012670931944fd92e8ae3fda55af": "c3b9d012670931944fd92e8ae3fda55af",
+        "c410ddaa844cf925cc662ba16de3f2757": "c410ddaa844cf925cc662ba16de3f2757",
+        "c418ce0ce70b5a45550116bd220cca671": "c418ce0ce70b5a45550116bd220cca671",
+        "c5f4577d659c8df9fdc34155759348d09": "c5f4577d659c8df9fdc34155759348d09",
+        "c67f1a263badbb44b13589fbf801e6d21": "c67f1a263badbb44b13589fbf801e6d21",
+        "c6889f4dbcab91b831aeae59641adc6c8": "c6889f4dbcab91b831aeae59641adc6c8",
+        "c70b5c5d3551b06805ffdceee3a21ac5e": "c70b5c5d3551b06805ffdceee3a21ac5e",
+        "c7b7a7004840346dca40fcad94c60ee4c": "c7b7a7004840346dca40fcad94c60ee4c",
+        "c7c547f76d286112159e5f41fd3ede154": "c7c547f76d286112159e5f41fd3ede154",
+        "c8392cb1a5a7fdeb7b3d58b1058d99392": "c8392cb1a5a7fdeb7b3d58b1058d99392",
+        "c8fec0e07856a3135d8f69ad9420511f5": "c8fec0e07856a3135d8f69ad9420511f5",
+        "cb25dc4b828026b41cc4eaa0dea60d90a": "cb25dc4b828026b41cc4eaa0dea60d90a",
+        "cc8b33dd86245cd90b242755ac2d8d764": "cc8b33dd86245cd90b242755ac2d8d764",
+        "ccb5bb7d61f7a8c00e821c5e85f1d2c04": "ccb5bb7d61f7a8c00e821c5e85f1d2c04",
+        "ccc595ca25a772988bcf2e959dd214735": "ccc595ca25a772988bcf2e959dd214735",
+        "cd29f3ea4bf263b395458daa491f06843": "cd29f3ea4bf263b395458daa491f06843",
+        "ce3e9e6fc2ba2a096c63e5efcebf626de": "ce3e9e6fc2ba2a096c63e5efcebf626de",
+        "ce3fed2b1c80fd4b5348f493b9fddd4e6": "ce3fed2b1c80fd4b5348f493b9fddd4e6",
+        "ce6f42ed2f636711214cfedcafb4dec3e": "ce6f42ed2f636711214cfedcafb4dec3e",
+        "cf01904f9a20c779e172ccedced44c43e": "cf01904f9a20c779e172ccedced44c43e",
+        "cf9755a99f2337ca971b18c370d147402": "cf9755a99f2337ca971b18c370d147402"
+    },
+    "qrprotect": {
+        "c02fb6eba0220cef6c6f82d8e15c458b6": "c02fb6eba0220cef6c6f82d8e15c458b6",
+        "c1529e3e087e937552012768aa7e9db44": "c1529e3e087e937552012768aa7e9db44",
+        "c16ea2bbf6ba2fe6b5574662abe64a33d": "c16ea2bbf6ba2fe6b5574662abe64a33d",
+        "c1ebec29d2940eea7a9c705bdf8e03f36": "c1ebec29d2940eea7a9c705bdf8e03f36",
+        "c359e4980a4898b5b748f98a11725b25c": "c359e4980a4898b5b748f98a11725b25c",
+        "c3b9d012670931944fd92e8ae3fda55af": "c3b9d012670931944fd92e8ae3fda55af",
+        "c410ddaa844cf925cc662ba16de3f2757": "c410ddaa844cf925cc662ba16de3f2757",
+        "c418ce0ce70b5a45550116bd220cca671": "c418ce0ce70b5a45550116bd220cca671",
+        "c5f4577d659c8df9fdc34155759348d09": "c5f4577d659c8df9fdc34155759348d09",
+        "c67f1a263badbb44b13589fbf801e6d21": "c67f1a263badbb44b13589fbf801e6d21",
+        "c6889f4dbcab91b831aeae59641adc6c8": "c6889f4dbcab91b831aeae59641adc6c8",
+        "c70b5c5d3551b06805ffdceee3a21ac5e": "c70b5c5d3551b06805ffdceee3a21ac5e",
+        "c7b7a7004840346dca40fcad94c60ee4c": "c7b7a7004840346dca40fcad94c60ee4c",
+        "c7c547f76d286112159e5f41fd3ede154": "c7c547f76d286112159e5f41fd3ede154",
+        "c8392cb1a5a7fdeb7b3d58b1058d99392": "c8392cb1a5a7fdeb7b3d58b1058d99392",
+        "c8fec0e07856a3135d8f69ad9420511f5": "c8fec0e07856a3135d8f69ad9420511f5",
+        "cb25dc4b828026b41cc4eaa0dea60d90a": "cb25dc4b828026b41cc4eaa0dea60d90a",
+        "cc8b33dd86245cd90b242755ac2d8d764": "cc8b33dd86245cd90b242755ac2d8d764",
+        "ccb5bb7d61f7a8c00e821c5e85f1d2c04": "ccb5bb7d61f7a8c00e821c5e85f1d2c04",
+        "ccc595ca25a772988bcf2e959dd214735": "ccc595ca25a772988bcf2e959dd214735",
+        "cd29f3ea4bf263b395458daa491f06843": "cd29f3ea4bf263b395458daa491f06843",
+        "ce3e9e6fc2ba2a096c63e5efcebf626de": "ce3e9e6fc2ba2a096c63e5efcebf626de",
+        "ce3fed2b1c80fd4b5348f493b9fddd4e6": "ce3fed2b1c80fd4b5348f493b9fddd4e6",
+        "ce6f42ed2f636711214cfedcafb4dec3e": "ce6f42ed2f636711214cfedcafb4dec3e",
+        "cf01904f9a20c779e172ccedced44c43e": "cf01904f9a20c779e172ccedced44c43e",
+        "cf9755a99f2337ca971b18c370d147402": "cf9755a99f2337ca971b18c370d147402"
+    },
     "react": {
+        "1": "我在尻尻",
+        "2": "啊...不行了..嗯啊啊...好大...好粗....啊頂到底了.....啊好熱......我...我....我快不行了....要去了....啊啊啊....要去了.....不要啊....啊怎麼了....拜託你不要拔出去.....求你了.....快來操我這淫蕩氾濫的小穴吧.....求你了......啊....就是這感覺......蘇蘇麻麻的感覺......啊啊啊啊.....我真的不行了......要去了.....恩亨！！！！！",
+        "50嵐": "吾乃常山蘿莉控是也",
         "yukino的作者": "是Arasi!!!",
         "伈": "是個大敗類",
         "伊嵐": "是帥哥",
         "作者大大": "我的作者是帥哥",
-        "嵐喵": "是個超級大變態",
+        "奶茶": "吾乃常山蘿莉控是也",
+        "嵐喵": "是877777",
         "師父": "87一個",
+        "彼岸": "是萌妹子",
+        "智障嵐": "我是智障",
         "桃": "看起來像變態",
+        "桐人": "吃雞",
+        "烤鴨": "好吃",
+        "罪夜": "是87",
+        "鍺": "雞雞被敲爛了",
         "雯": "電雯拍揮下去就對了",
-        "黃宇祥": "是個人渣"
+        "鴨子": "超好吃"
     },
-    "reread": true,
+    "reread": {
+        "c1529e3e087e937552012768aa7e9db44": "c1529e3e087e937552012768aa7e9db44",
+        "c9f4d64d94681b9c6d42da8c282b865ca": "c9f4d64d94681b9c6d42da8c282b865ca",
+        "cf9755a99f2337ca971b18c370d147402": "cf9755a99f2337ca971b18c370d147402"
+    },
     "sr": {
         "111697511275554": "伊嵐在看你",
-        "84360501207687": "笑死我也"
+        "58113691142501": "安德烈笑死",
+        "84360501207687": "笑死我也",
+        "84360521207687": "伊嵐笑你們一群智障"
     },
     "timeline": true
 }
