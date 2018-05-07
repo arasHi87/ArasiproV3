@@ -313,24 +313,31 @@ def lineBot(op):
                             cu = ""
                             cl.sendMessage(msg.to,"[名稱]:\n" + contact.displayName + "\n[mid]:\n" + msg.contentMetadata["mid"] + "\n[個簽]:\n" + contact.statusMessage + "\n[頭貼網址]:\nhttp://dl.profile.line-cdn.net/" + contact.pictureStatus + "\n[封面網址]:\n" + str(cu))
             elif msg.contentType == 7:
-                stk_id = msg.contentMetadata['STKID']
-                stk_ver = msg.contentMetadata['STKVER']
-                pkg_id = msg.contentMetadata['STKPKGID']
-                number = str(stk_id) + str(pkg_id)
-                if number in settings['sr']:
-                    react = settings['sr'][number]
-                    cl.sendMessage(to, str(react))
-                elif to in settings["checkSticker"]:
-                    path = "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/ANDROID/sticker.png;compress=true".format(stk_id)
-                    ret_ = "<<貼圖資料>>"
-                    ret_ += "\n[貼圖ID] : {}".format(stk_id)
-                    ret_ += "\n[貼圖包ID] : {}".format(pkg_id)
-                    ret_ += "\n[貼圖網址] : line://shop/detail/{}".format(pkg_id)
-                    ret_ += "\n[貼圖圖片網址]：https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/ANDROID/sticker.png;compress=true".format(stk_id)
-                    ret_ += "\n<<完>>"
-                    cl.sendMessage(to, str(ret_))
-                    cl.sendImageWithURL(to, path)
-                    cl.sendMessage(op.param1,ret_)
+                if sender in settings['limit']:
+                    if time.time() > settings['limit'][sender]:
+                        stk_id = msg.contentMetadata['STKID']
+                        stk_ver = msg.contentMetadata['STKVER']
+                        pkg_id = msg.contentMetadata['STKPKGID']
+                        number = str(stk_id) + str(pkg_id)
+                        if number in settings['sr']:
+                            react = settings['sr'][number]
+                            cl.sendMessage(to, str(react))
+                        elif to in settings["checkSticker"]:
+                            path = "https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/ANDROID/sticker.png;compress=true".format(stk_id)
+                            ret_ = "<<貼圖資料>>"
+                            ret_ += "\n[貼圖ID] : {}".format(stk_id)
+                            ret_ += "\n[貼圖包ID] : {}".format(pkg_id)
+                            ret_ += "\n[貼圖網址] : line://shop/detail/{}".format(pkg_id)
+                            ret_ += "\n[貼圖圖片網址]：https://stickershop.line-scdn.net/stickershop/v1/sticker/{}/ANDROID/sticker.png;compress=true".format(stk_id)
+                            ret_ += "\n<<完>>"
+                            cl.sendMessage(to, str(ret_))
+                            cl.sendImageWithURL(to, path)
+                            cl.sendMessage(op.param1,ret_)
+                        settings['limit'][sender] = time.time() + 3
+                    else:
+                        return False
+                else:
+                    settings['limit'][sender] = time.time() + 3
             elif msg.contentType == 16:
                 if settings["timeline"] == True:
                     try:
@@ -694,7 +701,11 @@ def lineBot(op):
                                 cl.updateGroup(G)
                                 cl.sendMessage(to, "成功關閉群組網址")
                 if msg.text in settings['react']:
-                    cl.sendMessage(to, settings['react'][msg.text])
+                    if sender in settings['limit']:
+                        if time.time() > settings['limit'][sender]:
+                            cl.sendMessage(to, settings['react'][msg.text])
+                        else:
+                            settings['limit'][sender] = time.time() + 3
                 if text.lower() == 'speed':
                     start = time.time()
                     cl.sendMessage(to, "processing......")
@@ -1239,8 +1250,8 @@ def lineBot(op):
                     pass
             except:
                 pass
-    except Exception as error:
-        logError(error)
+    except Exception as e:
+        logError(e)
 while True:
     try:
         ops = oepoll.singleTrace(count=50)
@@ -1248,5 +1259,6 @@ while True:
             for op in ops:
                 lineBot(op)
                 oepoll.setRevision(op.revision)
+                time.sleep(3)
     except Exception as e:
         logError(e)
