@@ -7,14 +7,18 @@
         "ua4b58590add65f7d8115089442a909f2": true,
         "ua8fe07daf59c683486005b2352975f53": true,
         "ub7babc6a8fd9943f96342c84abe09670": true,
-        "ucd17567f908abf1fc0e4561059813cab": true,
-        "uede25fae9fcdcb58f633970ada4f208a": true
+        "ucd17567f908abf1fc0e4561059813cab": true
     },
     "autoAdd": true,
     "autoJoin": true,
     "autoLeave": false,
     "autoRead": false,
-    "blacklist": {},
+    "blacklist": {
+        "u1ca4a503bddeb72dbf110afc252b58db": true,
+        "u7346001ca458074f53315937c36f43a5": true,
+        "u764c6601d802b9029ef15db1c33dbeac": true,
+        "uf194d571fc27b9b8453096edf523183a": true
+    },
     "bot": {
         "u8b648133c352185456f6674476bf4ee2": true,
         "ua8fe07daf59c683486005b2352975f53": true,
@@ -23,46 +27,139 @@
     },
     "checkSticker": {},
     "contact": true,
-    "detectMention": {
-        "c1529e3e087e937552012768aa7e9db44": "c1529e3e087e937552012768aa7e9db44"
-    },
+    "detectMention": false,
     "gm": {
+        "c0249850570be61960d92a254c9445efe": {
+            "ua4b58590add65f7d8115089442a909f2": "ua4b58590add65f7d8115089442a909f2"
+        },
         "c02fb6eba0220cef6c6f82d8e15c458b6": {
             "u8b648133c352185456f6674476bf4ee2": "u8b648133c352185456f6674476bf4ee2"
         },
+        "c111d1ff96bfe3e0a49c7aaee9b7f2b22": {
+            "u39304c4f5edd8781d55d96787cc91a53": "u39304c4f5edd8781d55d96787cc91a53",
+            "ub7babc6a8fd9943f96342c84abe09670": "ub7babc6a8fd9943f96342c84abe09670"
+        },
         "c1529e3e087e937552012768aa7e9db44": {
             "u85ee80cfb293599510d0c17ab25a5c98": "u85ee80cfb293599510d0c17ab25a5c98"
+        },
+        "c16ea2bbf6ba2fe6b5574662abe64a33d": {
+            "uad2863dc77640898974cacd8cfc7e933": "uad2863dc77640898974cacd8cfc7e933"
+        },
+        "c1ebec29d2940eea7a9c705bdf8e03f36": {
+            "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
+        },
+        "c21e9612f7fdfdd94497e5cbf2649754b": {
+            "u41df56d1b2728baa929cc081704dc8cf": "u41df56d1b2728baa929cc081704dc8cf"
         },
         "c2886ba10e7069ea273bd2f163d2daaa2": {
             "u5890590e6076467a7823957de3c94689": "u5890590e6076467a7823957de3c94689",
             "udfcc766a298307d274935db8ab8f5886": "udfcc766a298307d274935db8ab8f5886"
         },
+        "c334461d341f2bf652459603ffaec04e1": {
+            "uede25fae9fcdcb58f633970ada4f208a": "uede25fae9fcdcb58f633970ada4f208a"
+        },
         "c3432d742f135409adf48fde7c3ef5508": {
             "ue38f124b0e571d6e3b55f664c9e43855": "ue38f124b0e571d6e3b55f664c9e43855"
+        },
+        "c359e4980a4898b5b748f98a11725b25c": {
+            "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
+        },
+        "c418ce0ce70b5a45550116bd220cca671": {
+            "u67f77712583c341c2624a1b3aa38e4a0": "u67f77712583c341c2624a1b3aa38e4a0"
+        },
+        "c5f4577d659c8df9fdc34155759348d09": {
+            "u23c79986af80a491be9e6a7eb4c6e984": "u23c79986af80a491be9e6a7eb4c6e984",
+            "u66e587113de8aef55848afc755f3762c": "u66e587113de8aef55848afc755f3762c"
+        },
+        "c67f1a263badbb44b13589fbf801e6d21": {
+            "u764c6601d802b9029ef15db1c33dbeac": "u764c6601d802b9029ef15db1c33dbeac",
+            "u7760fe50542a165f561fe63f4dada95a": "u7760fe50542a165f561fe63f4dada95a"
+        },
+        "c6889f4dbcab91b831aeae59641adc6c8": {
+            "uede25fae9fcdcb58f633970ada4f208a": "uede25fae9fcdcb58f633970ada4f208a"
+        },
+        "c695661f5d3bea641a7d07461627a5d51": {
+            "u8bc859946859da645bb1f13763bdd808": "u8bc859946859da645bb1f13763bdd808",
+            "uede25fae9fcdcb58f633970ada4f208a": "uede25fae9fcdcb58f633970ada4f208a"
         },
         "c7b7a7004840346dca40fcad94c60ee4c": {
             "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
         },
+        "c7c547f76d286112159e5f41fd3ede154": {
+            "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
+        },
+        "c8392cb1a5a7fdeb7b3d58b1058d99392": {
+            "u66b223db78e9b62e5abb392979e8ea64": "u66b223db78e9b62e5abb392979e8ea64"
+        },
+        "c8fec0e07856a3135d8f69ad9420511f5": {
+            "u869463b8b33a8e606fb69d6d283697ac": "u869463b8b33a8e606fb69d6d283697ac"
+        },
+        "c910082c51b75edb7c2b6f838fc022d63": {
+            "u92475f336f490f725fb115764d7271ae": "u92475f336f490f725fb115764d7271ae"
+        },
+        "c945f5337d306bca3948272b4ce8c7146": {
+            "ud09e03de46402b2b8d2e38cf978a435f": "ud09e03de46402b2b8d2e38cf978a435f"
+        },
         "c9f4d64d94681b9c6d42da8c282b865ca": {
             "u66d4c27e8f45f025cf5774883b67ddc1": "u66d4c27e8f45f025cf5774883b67ddc1"
         },
+        "cb25dc4b828026b41cc4eaa0dea60d90a": {
+            "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
+        },
+        "cb7d9dfda774986760ef49853df27cf93": {
+            "u3caacd39d0d3f1f21107782c33c0ac54": "u3caacd39d0d3f1f21107782c33c0ac54",
+            "u8c9ac7351016360ab51e267704e61e0d": "u8c9ac7351016360ab51e267704e61e0d",
+            "uede25fae9fcdcb58f633970ada4f208a": "uede25fae9fcdcb58f633970ada4f208a"
+        },
         "cc3d7c5cf26f83396901976882f616e48": {
             "uf8ae5b9b95db47234d38dc1bc24c0eb5": "uf8ae5b9b95db47234d38dc1bc24c0eb5"
+        },
+        "cc8b33dd86245cd90b242755ac2d8d764": {
+            "u884a75bb807dbbcdd157d84ad55ba64a": "u884a75bb807dbbcdd157d84ad55ba64a",
+            "ue5abad1afe492dacb6cc0c07b9befc0c": "ue5abad1afe492dacb6cc0c07b9befc0c"
+        },
+        "ccbbc46db70dd6eca99100996d51ab278": {
+            "u633a7481dc469e441c6ff9c6020b005d": "u633a7481dc469e441c6ff9c6020b005d"
+        },
+        "ccc595ca25a772988bcf2e959dd214735": {
+            "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
+        },
+        "cd29f3ea4bf263b395458daa491f06843": {
+            "u00d0e3684d203a77d15f2d5489f9df41": "u00d0e3684d203a77d15f2d5489f9df41"
+        },
+        "cd2fb3e07608a7dba50c4cfb79faf9145": {
+            "u0bda048ded1cdb573205e0e5080f38e1": "u0bda048ded1cdb573205e0e5080f38e1"
+        },
+        "cdb32c5b724fa60e3def7dfd0d73f5603": {
+            "u2ecb241e15b634798e7fffffbbaa2a0f": "u2ecb241e15b634798e7fffffbbaa2a0f",
+            "u8a602879a704bb54049ae2655bd39bf7": "u8a602879a704bb54049ae2655bd39bf7",
+            "uede25fae9fcdcb58f633970ada4f208a": "uede25fae9fcdcb58f633970ada4f208a",
+            "uf67941225ddfcc0f3b5135ec75310759": "uf67941225ddfcc0f3b5135ec75310759"
+        },
+        "cdd58853feb0b979d90832e94ec5a95d1": {
+            "ue006c548bfffccd02c6a125c0bd6d6f2": "ue006c548bfffccd02c6a125c0bd6d6f2"
+        },
+        "ce3e9e6fc2ba2a096c63e5efcebf626de": {
+            "u68c9e1bb215370175fc4275249498f52": "u68c9e1bb215370175fc4275249498f52"
+        },
+        "ce3fed2b1c80fd4b5348f493b9fddd4e6": {
+            "u75e9011883f53e48a269c267e87be873": "u75e9011883f53e48a269c267e87be873"
+        },
+        "ce6f42ed2f636711214cfedcafb4dec3e": {
+            "ue5abad1afe492dacb6cc0c07b9befc0c": "ue5abad1afe492dacb6cc0c07b9befc0c"
         },
         "cf01904f9a20c779e172ccedced44c43e": {
             "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
         }
     },
-    "inviteprotect": {},
+    "inviteprotect": {
+        "c9f4d64d94681b9c6d42da8c282b865ca": "c9f4d64d94681b9c6d42da8c282b865ca"
+    },
     "keyCommand": "",
     "lang": "JP",
-    "limit": {
-        "u25beae3ab92faea6b5991a67a7459c7e": 1525651185.110413,
-        "u2d18b195540f5484316912e588829dda": 1525651929.4987075,
-        "u66d4c27e8f45f025cf5774883b67ddc1": 1525651849.65644,
-        "u85ee80cfb293599510d0c17ab25a5c98": 1525651920.0954814
+    "protect": {
+        "c9f4d64d94681b9c6d42da8c282b865ca": "c9f4d64d94681b9c6d42da8c282b865ca"
     },
-    "protect": {},
     "qrprotect": {},
     "react": {
         "1": "我在尻尻",
@@ -87,16 +184,27 @@
         "鴨子": "超好吃"
     },
     "reread": {
-        "c7b7a7004840346dca40fcad94c60ee4c": "c7b7a7004840346dca40fcad94c60ee4c",
+        "c9f4d64d94681b9c6d42da8c282b865ca": "c9f4d64d94681b9c6d42da8c282b865ca",
         "cf9755a99f2337ca971b18c370d147402": "cf9755a99f2337ca971b18c370d147402"
     },
     "sr": {
+        "107537821265244": "放棄人生了",
         "111697511275554": "伊嵐在看你",
         "111697731275554": "伊嵐已經失心瘋了",
         "131875251327085": "看著ㄓㄓ伊幹嵐溜過去",
+        "168735381445168": "歧視你",
+        "311459932484808": "0",
         "58113691142501": "安德烈笑死",
+        "58114011142501": "安德烈看你",
         "84360501207687": "笑死我也",
         "84360521207687": "伊嵐笑你們一群智障"
     },
-    "timeline": true
+    "timeline": true,
+    "wel": {
+        "c359e4980a4898b5b748f98a11725b25c": "歡迎進入群組！！！本群群長是變態！！！",
+        "c7b7a7004840346dca40fcad94c60ee4c": "歡迎進入群組！！！本群群長是變態！！！",
+        "c9f4d64d94681b9c6d42da8c282b865ca": "群長的耳朵有跳蛋手機  震到高潮",
+        "ce3e9e6fc2ba2a096c63e5efcebf626de": "歡迎進入群組！！！！本群群長是有大叔夢的偽娘",
+        "cf01904f9a20c779e172ccedced44c43e": "歡迎進入群組！！！本群群長是變態！！！"
+    }
 }
