@@ -1,6 +1,8 @@
 {
     "admin": {
         "u1d263d768adbdd3b9f4c51833c7c4d29": true,
+        "u6326b44aef7af495b57cc8307de075c4": true,
+        "u66d4c27e8f45f025cf5774883b67ddc1": true,
         "u68c9e1bb215370175fc4275249498f52": true,
         "u85ee80cfb293599510d0c17ab25a5c98": true,
         "u8efc93824990b63d86eebb930ab97360": true,
@@ -15,8 +17,11 @@
     "autoRead": false,
     "blacklist": {
         "u1ca4a503bddeb72dbf110afc252b58db": true,
+        "u259a60e01bbcfaba113de56a136ca22c": true,
+        "u391221d38f191ee1720efe402f20f79d": true,
         "u7346001ca458074f53315937c36f43a5": true,
         "u764c6601d802b9029ef15db1c33dbeac": true,
+        "uc0e0c6bc640047bdbd0c8683bcf34ef9": true,
         "uf194d571fc27b9b8453096edf523183a": true
     },
     "bot": {
@@ -27,11 +32,15 @@
     },
     "cc": {},
     "checkSticker": {},
-    "contact": true,
+    "contact": false,
     "detectMention": false,
     "gm": {
         "c0249850570be61960d92a254c9445efe": {
-            "ua4b58590add65f7d8115089442a909f2": "ua4b58590add65f7d8115089442a909f2"
+            "u39b27b92b71250bd26f93e46f299f069": "u39b27b92b71250bd26f93e46f299f069",
+            "ua4b58590add65f7d8115089442a909f2": "ua4b58590add65f7d8115089442a909f2",
+            "ubbd33c9bbfca57041ffde97873724e24": "ubbd33c9bbfca57041ffde97873724e24",
+            "uf43adfc889f548ddc8e7587ea4557109": "uf43adfc889f548ddc8e7587ea4557109",
+            "uf659b68db9cd36301e4ca6d06f728c36": "uf659b68db9cd36301e4ca6d06f728c36"
         },
         "c02fb6eba0220cef6c6f82d8e15c458b6": {
             "u8b648133c352185456f6674476bf4ee2": "u8b648133c352185456f6674476bf4ee2"
@@ -46,11 +55,22 @@
         "c16ea2bbf6ba2fe6b5574662abe64a33d": {
             "uad2863dc77640898974cacd8cfc7e933": "uad2863dc77640898974cacd8cfc7e933"
         },
+        "c1b15b64a6ed6419530a816e0d8602c95": {
+            "u135f269c247290b7c9f7e9731cdc2e4a": "u135f269c247290b7c9f7e9731cdc2e4a",
+            "u2179f64696492cb92eed26f4bb141509": "u2179f64696492cb92eed26f4bb141509",
+            "uede25fae9fcdcb58f633970ada4f208a": "uede25fae9fcdcb58f633970ada4f208a"
+        },
         "c1ebec29d2940eea7a9c705bdf8e03f36": {
             "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
         },
         "c21e9612f7fdfdd94497e5cbf2649754b": {
             "u41df56d1b2728baa929cc081704dc8cf": "u41df56d1b2728baa929cc081704dc8cf"
+        },
+        "c23577e250871b6237da9ed3863d0a044": {
+            "u48416a5fe1639c4e021e5ec39d1ea3e0": "u48416a5fe1639c4e021e5ec39d1ea3e0"
+        },
+        "c24b9b8883f705803cad809f308ccb7c2": {
+            "u6293752c60500c0b05fa8512e1089e29": "u6293752c60500c0b05fa8512e1089e29"
         },
         "c2886ba10e7069ea273bd2f163d2daaa2": {
             "u5890590e6076467a7823957de3c94689": "u5890590e6076467a7823957de3c94689",
@@ -60,6 +80,7 @@
             "uede25fae9fcdcb58f633970ada4f208a": "uede25fae9fcdcb58f633970ada4f208a"
         },
         "c3432d742f135409adf48fde7c3ef5508": {
+            "u6293752c60500c0b05fa8512e1089e29": "u6293752c60500c0b05fa8512e1089e29",
             "ue38f124b0e571d6e3b55f664c9e43855": "ue38f124b0e571d6e3b55f664c9e43855"
         },
         "c359e4980a4898b5b748f98a11725b25c": {
@@ -68,9 +89,16 @@
         "c418ce0ce70b5a45550116bd220cca671": {
             "u67f77712583c341c2624a1b3aa38e4a0": "u67f77712583c341c2624a1b3aa38e4a0"
         },
+        "c4edea4d699ef318cf1b297f1a3909a2e": {
+            "u6a9fccde54472418d4e5ad2dc691eb87": "u6a9fccde54472418d4e5ad2dc691eb87"
+        },
         "c5f4577d659c8df9fdc34155759348d09": {
             "u23c79986af80a491be9e6a7eb4c6e984": "u23c79986af80a491be9e6a7eb4c6e984",
-            "u66e587113de8aef55848afc755f3762c": "u66e587113de8aef55848afc755f3762c"
+            "u66e587113de8aef55848afc755f3762c": "u66e587113de8aef55848afc755f3762c",
+            "uede25fae9fcdcb58f633970ada4f208a": "uede25fae9fcdcb58f633970ada4f208a"
+        },
+        "c64a16ebf6709d4e05a90ea1bda9c3154": {
+            "u3610b06cc916fcd0dbb75251ec2463e3": "u3610b06cc916fcd0dbb75251ec2463e3"
         },
         "c67f1a263badbb44b13589fbf801e6d21": {
             "u764c6601d802b9029ef15db1c33dbeac": "u764c6601d802b9029ef15db1c33dbeac",
@@ -83,14 +111,24 @@
             "u8bc859946859da645bb1f13763bdd808": "u8bc859946859da645bb1f13763bdd808",
             "uede25fae9fcdcb58f633970ada4f208a": "uede25fae9fcdcb58f633970ada4f208a"
         },
+        "c6df644546fdfc150f45cd156d1537407": {
+            "u9939108c139e1c3e314e50d22b1292bd": "u9939108c139e1c3e314e50d22b1292bd"
+        },
         "c7b7a7004840346dca40fcad94c60ee4c": {
             "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
         },
         "c7c547f76d286112159e5f41fd3ede154": {
             "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
         },
+        "c8293a1a4038f603c9d5b927ca609ca95": {
+            "u7469e3a0981808bd06925d8e046fd115": "u7469e3a0981808bd06925d8e046fd115"
+        },
         "c8392cb1a5a7fdeb7b3d58b1058d99392": {
             "u66b223db78e9b62e5abb392979e8ea64": "u66b223db78e9b62e5abb392979e8ea64"
+        },
+        "c8a0171cf1ae7a59f5061a262c4c9d714": {
+            "u61cfe2398cc272fa8dad9126e96c2606": "u61cfe2398cc272fa8dad9126e96c2606",
+            "uede25fae9fcdcb58f633970ada4f208a": "uede25fae9fcdcb58f633970ada4f208a"
         },
         "c8fec0e07856a3135d8f69ad9420511f5": {
             "u869463b8b33a8e606fb69d6d283697ac": "u869463b8b33a8e606fb69d6d283697ac"
@@ -106,6 +144,10 @@
         },
         "cb25dc4b828026b41cc4eaa0dea60d90a": {
             "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
+        },
+        "cb5fa0e39190257d73d09e3ff7263e2e5": {
+            "u464f300942df3cd737c18fdef421dc3a": "u464f300942df3cd737c18fdef421dc3a",
+            "ue4b43778620b70cc123bfcb10e0b1358": "ue4b43778620b70cc123bfcb10e0b1358"
         },
         "cb7d9dfda774986760ef49853df27cf93": {
             "u3caacd39d0d3f1f21107782c33c0ac54": "u3caacd39d0d3f1f21107782c33c0ac54",
@@ -140,6 +182,9 @@
         "cdd58853feb0b979d90832e94ec5a95d1": {
             "ue006c548bfffccd02c6a125c0bd6d6f2": "ue006c548bfffccd02c6a125c0bd6d6f2"
         },
+        "ce3d648de577cf7ff8429188e495abc88": {
+            "u9939108c139e1c3e314e50d22b1292bd": "u9939108c139e1c3e314e50d22b1292bd"
+        },
         "ce3e9e6fc2ba2a096c63e5efcebf626de": {
             "u68c9e1bb215370175fc4275249498f52": "u68c9e1bb215370175fc4275249498f52"
         },
@@ -151,58 +196,1452 @@
         },
         "cf01904f9a20c779e172ccedced44c43e": {
             "u8efc93824990b63d86eebb930ab97360": "u8efc93824990b63d86eebb930ab97360"
+        },
+        "cf6f741a0f5c4789703148e7e92811679": {
+            "uede25fae9fcdcb58f633970ada4f208a": "uede25fae9fcdcb58f633970ada4f208a",
+            "uf10154b8ad04023bdcf48539e4f2579f": "uf10154b8ad04023bdcf48539e4f2579f"
         }
     },
     "inviteprotect": {
-        "c9f4d64d94681b9c6d42da8c282b865ca": "c9f4d64d94681b9c6d42da8c282b865ca"
+        "c9f4d64d94681b9c6d42da8c282b865ca": "c9f4d64d94681b9c6d42da8c282b865ca",
+        "cb5fa0e39190257d73d09e3ff7263e2e5": "cb5fa0e39190257d73d09e3ff7263e2e5"
     },
     "keyCommand": "",
     "lang": "JP",
+    "limit": {
+        "u03059e4a5a5a8a385b99a7caf8016daa": {
+            "stick": {
+                "104136211256796": 1,
+                "react": true
+            },
+            "text": {
+                "(偷望": 1,
+                "react": true
+            }
+        },
+        "u092cb11c28dd96c225b8c6e11fcae8d6": {
+            "stick": {
+                "31": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "。。。。": 1
+            }
+        },
+        "u097922eb3f3ff2ab43642fc44c9d850b": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "《有人偷偷收回訊息哦》\nA⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝A⃝\n《訊息內容》\n處理速度\n0.1884060269148904秒": 1
+            }
+        },
+        "u0b396498e55a5e017147ac8eed505397": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "早安安": 1
+            }
+        },
+        "u0c98cec7dbe9eb52aac7ba6736179114": {
+            "stick": {
+                "4561421009758": 1,
+                "react": true
+            },
+            "text": {
+                "(呆－": 1,
+                "react": true
+            }
+        },
+        "u0e6eca3bd198a0500565fe16c2943e1f": {
+            "stick": {
+                "179546532000047": 1,
+                "react": true
+            },
+            "text": {
+                "[主頁分享預覽]\n文章作者：ξ夢·痕ζ 淫蕩高逼 奈米月老帶我飛\n內容：淫蕩高逼求愛愛 此文出自高逼色誘別人後得到的結果 大家快看 有淫蕩發情的人 還不分享\n[媒體資訊]\nhttp://profile.line-cdn.net/r/myhome/h/4E272362B022F6C86F4F2A0AF7F007CC22183451t082e1318\n寬：306,高：245\n[文章網址]\nline://home/post?userMid=u961f4bc33d7a4c61836744cab2bc1917&postId=1152580407505042745": 1,
+                "react": true
+            }
+        },
+        "u12dc1502972baf9d082b9903deb475c2": {
+            "stick": {
+                "116676231287912": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "好久不見": 2
+            }
+        },
+        "u150afa46440dddc75699d741a3122d0e": {
+            "stick": {},
+            "text": {
+                "@約戰狂三（柏辰） ㄆㄆ": 1,
+                "react": true
+            }
+        },
+        "u17550eed67a6400367bf7e50eb87cb18": {
+            "stick": {
+                "142878681361437": 1,
+                "react": true
+            },
+            "text": {}
+        },
+        "u197c5328ad0de7cce6e713e77d5147e1": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "很吵欸他": 1
+            }
+        },
+        "u1b21fb99d653afe9a7e3fa57fc1758d4": {
+            "stick": {
+                "1492": 1,
+                "react": true
+            },
+            "text": {
+                "@松阪明夫 有邀回血盟嗎": 1,
+                "react": true
+            }
+        },
+        "u1d263d768adbdd3b9f4c51833c7c4d29": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "status": 1
+            }
+        },
+        "u2179f64696492cb92eed26f4bb141509": {
+            "stick": {},
+            "text": {
+                "((喔喔 好蚌喔喔！！": 1,
+                "react": true
+            }
+        },
+        "u25453391a69ac536004c7e8f976a2eb2": {
+            "stick": {
+                "280706081914987": 1,
+                "react": true
+            },
+            "text": {
+                "@✿千本桜❀ZERO  櫻空釋 !?": 1,
+                "react": true
+            }
+        },
+        "u259a60e01bbcfaba113de56a136ca22c": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "怎麼踢": 1
+            }
+        },
+        "u2614f0fd2a18ec596d17df743f470740": {
+            "stick": {
+                "55460211135932": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "我見到好多都10人樓下": 1
+            }
+        },
+        "u2679b0be9bd1e14c8f56bccbe7f8dc4b": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "歡迎大佬@player的加入!": 2
+            }
+        },
+        "u27a4bb71861c9d4b61fc01350a22ad7c": {
+            "stick": {
+                "155843401402839": 2,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "無聊的屁孩": 1
+            }
+        },
+        "u2859d821779f50894b4c7588329af18f": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "安": 1
+            }
+        },
+        "u29176019d8b16db67c63c8d8662cd9b2": {
+            "stick": {},
+            "text": {
+                "@V3  \nuf8ae5b9b95db47234d38dc1bc24c0eb5\n收回了訊息\n訊息內容:\n發送時間:2018-05-08 23:49:21.486080": 1,
+                "react": true
+            }
+        },
+        "u2afad8c1adda6b8ad13880cca5cf2ce2": {
+            "stick": {
+                "3778926411096": 1,
+                "react": true
+            },
+            "text": {
+                "@♚病嬌の教ت團長 嵐嵐貓 英國留學中 嗨": 1,
+                "react": true
+            }
+        },
+        "u2cbf6c831309110dad7f3fbe93561fcb": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "我不懂": 1
+            }
+        },
+        "u2d18b195540f5484316912e588829dda": {
+            "stick": {
+                "58113691142501": 3,
+                "react": false
+            },
+            "text": {
+                "react": true,
+                "手機line開著睡覺": 1
+            }
+        },
+        "u2d6262fe3c935ed9cbfd3fc5e0e4a98b": {
+            "stick": {
+                "161341941420963": 1,
+                "react": true
+            },
+            "text": {
+                "@♚病嬌の教ت團長 嵐嵐貓 英國留學中 ": 1,
+                "react": true
+            }
+        },
+        "u2ef4c679b098fff6ed1d41c3560dca3d": {
+            "stick": {},
+            "text": {
+                "https://youtu.be/1SPiC620f6s": 1,
+                "react": true
+            }
+        },
+        "u311fcf57772dc72b1b9b2cb6f241a8ae": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "對付飛桶加公主": 1
+            }
+        },
+        "u330f9ce9a22c2f816c466bc6064cc092": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "ξ夢·痕ζ 淫蕩高逼 奈米月老帶我飛已分享了一篇文章\n\n[文章網址]\nline://home/post?userMid=u961f4bc33d7a4c61836744cab2bc1917&postId=1152580407505042745\n文章內容\n[僅提供100字內]淫蕩高逼求愛愛 此文出自高逼色誘別人後得到的結果 大家快看 有淫蕩發情的人 還不分享\n[ObjectURL]\nhttps://obs-us.line-apps.com/myhome/h/download.nhn?oid=4E272362B022F6C86F4F2A0AF7F007CC22183451t082e1318": 1
+            }
+        },
+        "u33c2b73d7daa507d123d8c571ebe9eb3": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "「 Sticker Dihapus 」\n• Pengirim : ٩(˃̶͈̀௰˂̶͈́)و\n• Nama Grup : 明夫與朋友の聊天室\n• Waktu Ngirim : 17:10:23\n\n「 Sticker Info 」\n• Sticker ID : 2\n• Sticker Version : 100\n• Sticker Package : 1\n• Sticker Url : line://shop/detail/1": 1
+            }
+        },
+        "u340cbee7afddc2bf5228a6368d76832e": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "有問題盡量問": 1
+            }
+        },
+        "u3610b06cc916fcd0dbb75251ec2463e3": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "請陛下息怒": 1
+            }
+        },
+        "u36fa300a49726e26366cbb7d0214e641": {
+            "stick": {
+                "1131": 1,
+                "react": true
+            },
+            "text": {
+                "n": 1,
+                "react": true
+            }
+        },
+        "u372eef9e30a50f5d76483d81448993b7": {
+            "stick": {
+                "134973321335707": 1,
+                "react": true
+            },
+            "text": {}
+        },
+        "u381aa5729ffa4460e44685c9ea558159": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "屌屌的": 1
+            }
+        },
+        "u391221d38f191ee1720efe402f20f79d": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "好哦": 1
+            }
+        },
+        "u3b30c55bfa412a9e37da7794c33c1cff": {
+            "stick": {
+                "116215921286774": 1,
+                "react": true
+            },
+            "text": {
+                "@ૐ ͜͡◈❏ドロシーৡ🔸 姐姐晚安~~": 1,
+                "react": true
+            }
+        },
+        "u3c770e4b49a27d88d28f6256b41030f5": {
+            "stick": {},
+            "text": {
+                "@Yukino 有病喔": 1,
+                "react": true
+            }
+        },
+        "u3caacd39d0d3f1f21107782c33c0ac54": {
+            "stick": {
+                "42356791103444": 1,
+                "react": true
+            },
+            "text": {
+                "(飄走": 1,
+                "react": true
+            }
+        },
+        "u3d7e0e8e5d038cb4178e76a5f31095c9": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "《運行確認》": 1
+            }
+        },
+        "u3e12b30d4bac28924a709cb1bdc3275f": {
+            "stick": {
+                "155997671403341": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "別人的老婆，最好幹": 1
+            }
+        },
+        "u3f905ba4b7ccdeee5ce8a1fc45677f94": {
+            "stick": {
+                "1432": 1,
+                "react": true
+            },
+            "text": {}
+        },
+        "u40444deecc7b8adae9d28541004102de": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "看來是機器人": 1
+            }
+        },
+        "u45f18b9c7cd0c4226ac1071f08e4c659": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "踢人吧": 1
+            }
+        },
+        "u464f300942df3cd737c18fdef421dc3a": {
+            "stick": {
+                "211": 2,
+                "react": true
+            },
+            "text": {
+                "Yukino:bye": 1,
+                "react": true
+            }
+        },
+        "u46b5f4664c3923595d4f539d69ad509b": {
+            "stick": {},
+            "text": {
+                "@🌿千葉葉娜➾はな♪ 我": 1,
+                "react": true
+            }
+        },
+        "u48416a5fe1639c4e021e5ec39d1ea3e0": {
+            "stick": {
+                "161934431422891": 1,
+                "react": true
+            },
+            "text": {
+                " https://youtu.be/C56OmWSUDIA": 1,
+                "react": true
+            }
+        },
+        "u48a0ae714714cbc3fe956ea2dc9665d4": {
+            "stick": {},
+            "text": {
+                "POSTNOTIFICATION": 3,
+                "react": true
+            }
+        },
+        "u4a5b9ae8cda7157953663eb92f2c4dca": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "誰有獅子座  雙子座 官方好友": 1
+            }
+        },
+        "u4be3ad4f99f7be379a3059b7fa0175b3": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "這樣配好嗎？": 1
+            }
+        },
+        "u4e943ca9663852bd1c19fc6e1f82cbb9": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "超級好笑的哈哈哈": 1
+            }
+        },
+        "u4eda5c103cacd6f7fdcec93223f5b98e": {
+            "stick": {
+                "74803921183925": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "嵐貓你是變態？？？（": 1
+            }
+        },
+        "u4f487e3cd1b4f33d96857a7752e3f6af": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "†斬寒†\n掛簽掛上 標我 我邀\n（無特）\n（職位缺人中）": 1
+            }
+        },
+        "u4fce924aa92cb32a8aa75c1e61070137": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "安你的感覺有問題(x": 1
+            }
+        },
+        "u52906c3d95b296a8ef133af56d7383a4": {
+            "stick": {
+                "40602101099086": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "記得": 1
+            }
+        },
+        "u5890590e6076467a7823957de3c94689": {
+            "stick": {
+                "161": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "。。。": 2
+            }
+        },
+        "u5b0b02a19b6f7389b1c5c1d812ff48f2": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "機器人好可愛": 1
+            }
+        },
+        "u5d8bb3c5a1342d4dcf3cbb9c1bb2d2a7": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "標我我邀": 1
+            }
+        },
+        "u5da3f5fe8091ee6a774f5eb0f952e688": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "嗯": 1
+            }
+        },
+        "u61cfe2398cc272fa8dad9126e96c2606": {
+            "stick": {},
+            "text": {
+                "https://youtu.be/JOsU9VM8zuI": 1,
+                "react": true
+            }
+        },
+        "u6293752c60500c0b05fa8512e1089e29": {
+            "stick": {
+                "1081": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "我好像不能關": 1
+            }
+        },
+        "u6326b44aef7af495b57cc8307de075c4": {
+            "stick": {
+                "1101": 1,
+                "react": true
+            },
+            "text": {
+                "[提示] @x 退出了 shelter ！": 1,
+                "react": true
+            }
+        },
+        "u65f4e612864c4bdbe10fb8e1dadd66d7": {
+            "stick": {
+                "120626311298160": 1,
+                "react": true
+            },
+            "text": {
+                "( 我不認識😂": 1,
+                "react": true
+            }
+        },
+        "u66d4c27e8f45f025cf5774883b67ddc1": {
+            "stick": {
+                "84360521207687": 1,
+                "react": true
+            },
+            "text": {
+                "react": false,
+                "《設定》\n自動加入群組 🆗\n自動加入好友 🆗\n自動離開副本 🆗\n查詢收回 🆗\n邀請保護 🈲\n網址保護 🈲\n群組保護 🆗\n友資資訊 🈲\n貼圖查詢 🈲": 3
+            }
+        },
+        "u66e587113de8aef55848afc755f3762c": {
+            "stick": {
+                "107537801265244": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "什麼東西": 1
+            }
+        },
+        "u68c9e1bb215370175fc4275249498f52": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "媽祖的（？": 1
+            }
+        },
+        "u6cf205147b8eaedd7fd403e018ff0a47": {
+            "stick": {
+                "121536051300499": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "奶茶母湯": 1
+            }
+        },
+        "u6de2fd0d3f168038814531c1fb8fb7dc": {
+            "stick": {
+                "79724061196159": 3,
+                "react": false
+            },
+            "text": {}
+        },
+        "u6e684bace2a37787dfc6d9a7300bf87d": {
+            "stick": {},
+            "text": {
+                "@çiön@böyi 姆？((呆望": 1,
+                "react": true
+            }
+        },
+        "u6e947479960f8fd80fa8268bff80cb48": {
+            "stick": {
+                "108582931267839": 1,
+                "react": true
+            },
+            "text": {
+                "Www": 1,
+                "react": true
+            }
+        },
+        "u701d702083e44a7c697216bc6dc833f0": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "要汙圖我也有\n就看你們要不要###": 1
+            }
+        },
+        "u70c715b64b4eafd59a6284864c6ea283": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "呵": 1
+            }
+        },
+        "u72ceee4cc14716563cf33373d09e515e": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "臉書搜尋：尹少\n好友自+有群邀\n徵家人定名私給\nhttp://line.naver.jp/ti/p/~gobuy22": 1
+            }
+        },
+        "u75e281c216b0e76a48f58480f814b8d8": {
+            "stick": {
+                "39908571097367": 1,
+                "react": true
+            },
+            "text": {}
+        },
+        "u75e9011883f53e48a269c267e87be873": {
+            "stick": {
+                "109801406310": 1,
+                "react": true
+            },
+            "text": {
+                ".....": 1,
+                "react": true
+            }
+        },
+        "u77158593b7adf83753b89115199bbe88": {
+            "stick": {
+                "382": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "係唔係櫻花d fd XD": 1
+            }
+        },
+        "u7723579083cf9587603af909b659b621": {
+            "stick": {
+                "236428699879": 1,
+                "react": true
+            },
+            "text": {}
+        },
+        "u78bcb990b8a2f3136e5c5ef20cd13cbc": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "你是說寶寶嗎 很可愛 哈哈": 1
+            }
+        },
+        "u795f911ae4cd79a4e334f9f2555a61b0": {
+            "stick": {
+                "179546532000047": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "處理速度\n0.18751651783622947秒": 1
+            }
+        },
+        "u7a0055e36225688fcb9b6711c2d3c5ff": {
+            "stick": {
+                "1412": 2,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "。": 1
+            }
+        },
+        "u7bff6bc8c696e8af8d5bb7f9ad1daa32": {
+            "stick": {
+                "4081": 2,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "我先睡啦": 1
+            }
+        },
+        "u7c29d7c19ee74d2eb5961b30445d7ad1": {
+            "stick": {},
+            "text": {
+                "Hello": 1,
+                "react": true
+            }
+        },
+        "u7c514d3ac6f9bccd08e55db7c3d88f99": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "邀左": 1
+            }
+        },
+        "u7d93c4448de76b3f1ee72a19cf6538ae": {
+            "stick": {
+                "131": 1,
+                "react": true
+            },
+            "text": {
+                "@伈 加油吧": 1,
+                "react": true
+            }
+        },
+        "u804bb92263b6d7e708d0bc74145d9a9c": {
+            "stick": {
+                "117598631290246": 3,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "好有趣？": 1
+            }
+        },
+        "u83619af7590ecca46d5627839d46ea09": {
+            "stick": {},
+            "text": {
+                "@Yukino 已退出群組": 1,
+                "react": true
+            }
+        },
+        "u84fa89e8033c2051a8f3c7b597cc6be8": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "。。@ت👈陳吉鑫👉 ": 1
+            }
+        },
+        "u85ee80cfb293599510d0c17ab25a5c98": {
+            "stick": {
+                "1752": 3,
+                "react": false
+            },
+            "text": {
+                "@冬粉 晚安": 1,
+                "react": true
+            }
+        },
+        "u86525050887b7e2a7b32c5d11324f83e": {
+            "stick": {},
+            "text": {
+                "@血嶽で 夕立(驅逐艦)⚓宏wolf WD 蛤": 1,
+                "react": true
+            }
+        },
+        "u883d294c6b2cf167520b1092a5b72fbf": {
+            "stick": {},
+            "text": {
+                "Sp": 1,
+                "react": true
+            }
+        },
+        "u8a602879a704bb54049ae2655bd39bf7": {
+            "stick": {
+                "168735381445168": 3,
+                "react": true
+            },
+            "text": {}
+        },
+        "u8b648133c352185456f6674476bf4ee2": {
+            "stick": {
+                "1522": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "運行中......": 1
+            }
+        },
+        "u8c9ac7351016360ab51e267704e61e0d": {
+            "stick": {},
+            "text": {
+                "@夏美☆詩音(カタカナ) 結束": 1,
+                "react": true
+            }
+        },
+        "u8efc93824990b63d86eebb930ab97360": {
+            "stick": {
+                "161341941420963": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "安~": 1
+            }
+        },
+        "u8fd93dfdd49a155bb97482cf8c524667": {
+            "stick": {
+                "281288951917119": 1,
+                "react": true
+            },
+            "text": {
+                "........": 1,
+                "react": true
+            }
+        },
+        "u90ff4f6660b6b3175e971234223c37d4": {
+            "stick": {},
+            "text": {
+                "( >ω✪)": 1,
+                "react": true
+            }
+        },
+        "u9184f1954bf761269af168242c5c85b1": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "《運行確認》": 1
+            }
+        },
+        "u9224fcd1bfafded469f1ff95b1bec7a3": {
+            "stick": {},
+            "text": {
+                "[用戶暱稱❤]\nξ夢·痕ζ 淫蕩高逼 奈米月老帶我飛\n\n[文字內容🔰]\n淫蕩高逼求愛愛 此文出自高逼色誘別人後得到的結果 大家快看 有淫蕩發情的人 還不分享\n\n[連結🐾]\nline://home/post?userMid=u961f4bc33d7a4c61836744cab2bc1917&postId=1152580407505042745\n\n[預覽👀]\nhttps://obs-us.line-apps.com/myhome/h/download.nhn?oid=4E272362B022F6C86F4F2A0AF7F007CC22183451t082e1318": 1,
+                "react": true
+            }
+        },
+        "u9455bd5290f73288c153691867ce540a": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "掛暱稱🌹我邀你\n不玻璃\n不雙掛\n愛聊天\n不幽靈\n掛好標記我": 2
+            }
+        },
+        "u946f8c0bbc74eadc5fd209eddf316428": {
+            "stick": {
+                "109801526310": 1,
+                "react": true
+            },
+            "text": {
+                "@忘記我。。好嗎 要打？": 1,
+                "react": true
+            }
+        },
+        "u9545690c9ce38c5c0dde40d6e8085ba1": {
+            "stick": {},
+            "text": {
+                "@c \n[收回了一個貼圖]\n\n[發送時間]\n2018-05-09 01:10:24\n[收回時間]\n2018-05-09 01:10:33": 1,
+                "react": true
+            }
+        },
+        "u961f4bc33d7a4c61836744cab2bc1917": {
+            "stick": {},
+            "text": {
+                "POSTNOTIFICATION": 3,
+                "react": true
+            }
+        },
+        "u96612d4cfdf2e8a3c4991bbb8380ae1a": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "笑死我了": 2
+            }
+        },
+        "u96f41e06c9f96aa98011d3090340dd8d": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "傻眼": 1
+            }
+        },
+        "u98279e9633dd5829daaa51500bc6f8bd": {
+            "stick": {
+                "147041997834": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "好ㄅ": 1
+            }
+        },
+        "u989138703b60eebbf7e46c4266436dba": {
+            "stick": {
+                "155598111402040": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "你沒有被V防黑單吧": 1
+            }
+        },
+        "u98922e525aedd361104e14b197feeed0": {
+            "stick": {
+                "127408751315635": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "安安安": 1
+            }
+        },
+        "u98b4a03fdade95a29d8f3af9b9dc5fc8": {
+            "stick": {},
+            "text": {
+                "@🌿千葉葉娜➾はな♪ ": 1,
+                "react": true
+            }
+        },
+        "u9939108c139e1c3e314e50d22b1292bd": {
+            "stick": {
+                "5142": 1,
+                "react": true
+            },
+            "text": {
+                "@伊嵐 謝謝 (/^▽^)/ ": 1,
+                "react": true
+            }
+        },
+        "u9b035730aeb9d17410d96e95ad2503b8": {
+            "stick": {
+                "91182561224606": 1,
+                "react": true
+            },
+            "text": {}
+        },
+        "u9df149079d00b7b47c4ffd5cf7c22245": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "笑死 收留言被公開處刑": 1
+            }
+        },
+        "u9eefe63cc93ff6bf5756fc916cf0019a": {
+            "stick": {},
+            "text": {
+                "[收回訊息者]\n松阪明夫\n[訊息內容]\n@い悠遠ゞ(狼)血盟₲Ð•初代破壞帝狂妄❀ \n你字跟網址打在一起就會想你那樣啊…網址會不能用": 1,
+                "react": true
+            }
+        },
+        "u9f051bf9c6e5ec3d1401ee04e47287fb": {
+            "stick": {
+                "97145725879": 1,
+                "react": true
+            },
+            "text": {}
+        },
+        "u9f50c92f9f1b43edca25161dd1fa2b10": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "這什麼？": 1
+            }
+        },
+        "ua4b58590add65f7d8115089442a909f2": {
+            "stick": {
+                "1251": 1,
+                "react": true
+            },
+            "text": {
+                "@深夜虐袮狠無情〃(姵情) 妹 晚安": 1,
+                "react": true
+            }
+        },
+        "ua633be0dc5a684026328296b881744d5": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "呵呵": 1
+            }
+        },
+        "ua750a70e0186823cfc691830c4b63d95": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "在用一次": 1
+            }
+        },
+        "ua8103aa808d96eb58e8171b5f7453a58": {
+            "stick": {},
+            "text": {
+                "react": false,
+                "初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n\n\n\n\n初\n代\n零\n席\n\n\n\n\n部\n隊\n降\n臨\n": 3
+            }
+        },
+        "ua8fe07daf59c683486005b2352975f53": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "yukino:bye": 1
+            }
+        },
+        "uaabe383fd1d65e5fc0971f2001236790": {
+            "stick": {
+                "267473241861969": 2,
+                "react": true
+            },
+            "text": {
+                "@羅王子 晚安": 1,
+                "react": true
+            }
+        },
+        "uaacad8b5f676eb514ccc5254eb07a4e3": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "？": 1
+            }
+        },
+        "ub5db205c3f2e536b201b76c5d30dc943": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "好東西來啦~~福利多多，就怕你不知道~~~\n所有商品，特價出售，多買多送，數量不限！\n訂購賴ID:88wee\n點擊諮詢 http://line.me/ti/p/6Hn80qmF8D\n\n不求高價~~  只求貨量 ~~~\n保證正品，假的免費送妹妹讓你爽一次\n效果保證超棒  無任何副作用\n\n【壯陽延時保健藥，催情藥，迷幻藥，充氣娃娃，飛機杯，情趣內衣，各式情 趣用品】\n壯陽延時保健藥：西力士，V5偉哥，V8偉哥，萬艾可，日本黑豹，日本藤素， 牛鞭，瑪卡。\n催情藥：藍精靈，紅蜘蛛，銀狐，高潮液，惡魔丘比特，費洛蒙香水。\n迷幻藥：乖乖水，瀰漫之夜，fm2，fm5，fm3，三唑侖。\n充氣娃娃，飛機杯，情趣內衣，各式情趣用品。\n所有商品，特價出售，多買多送，數量不限！\n訂購賴ID:88wee\n點擊諮詢 http://line.me/ti/p/6Hn80qmF8D\n\n女用\n1.乖乖水~（買二送一）\n2.惡魔丘比特~（買二送一）\n3.瀰漫之夜~（買二送一）\n4.卡宴~（買二送一）\n5.東京熱~（買二送一）\n6.迷姦粉~（買二送一）\n7.FM2-4~（買二送一）\n8.麥克納因~（買二送一）\n9.直達高潮~（買二送一）\n10.水汪汪~（買二送一）\n11.泰國銀狐~（買二送一）\n13.KKK3~（買二送一）\n14.益達口香糖~（買二送一）\n15.藍精靈~（買二送一）\n16.紅蜘蛛~（買二送一）\n17.金蒼蠅~（買二送一）\n18.日本情愫~（買二送一）\n19.一滴銷魂~（買二送一）\n20.貓女~（買二送一）\n21.迷魂煙~（買二送一）\n\n男用\n1.美國黑金~（買二送一）\n2.日本藤素~（買二送一）\n3.MACA威爾剛~（買二送一）\n4.硬十天~（買二送一）\n5.美國黑神~（買二送一）\n6.螞蟻生精片~（買二送一）\n7.印度神油~（買二送一）\n8.一想就硬~（買二送一）\n9.黃金偉哥~（買二送一）\n10.V5偉哥~（買二送一）\n11.V8偉哥~（買二送一）\n12.萬艾可~（買二送一）\n13.日本黑豹~（買二送一）\n\n以上商品特價出售購買二送一，  都是倉庫多餘現貨  \n保證正品，假的免費送妹妹讓你爽一次\n效果保證超棒  無任何副作用\nhttp://line.me/ti/p/6Hn80qmF8D": 1
+            }
+        },
+        "ub7babc6a8fd9943f96342c84abe09670": {
+            "stick": {
+                "1422": 1,
+                "react": true
+            },
+            "text": {
+                "[文章持有者]\n @x \n[文章預覽]\n(僅提供100字內容)\n 淫蕩高逼求愛愛 此文出自高逼色誘別人後得到的結果 大家快看 有淫蕩發情的人 還不分享\n[文章網址]\n line://home/post?userMid=u961f4bc33d7a4c61836744cab2bc1917&postId=1152580407505042745": 3,
+                "react": true
+            }
+        },
+        "ubbd33c9bbfca57041ffde97873724e24": {
+            "stick": {
+                "127230911315183": 3,
+                "react": false
+            },
+            "text": {
+                "@呆豬 👀幹0-0": 1,
+                "react": true
+            }
+        },
+        "ubc8866e56a4c1c8ca913ebc6355a7b8f": {
+            "stick": {
+                "294689801971244": 3,
+                "react": false
+            },
+            "text": {
+                "react": true,
+                "不會的": 1
+            }
+        },
+        "ubcfa845d5516de2d568cfc36d14b2a34": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "。。…": 1
+            }
+        },
+        "ubd343d07ae1c7615210ad39c1309b8e9": {
+            "stick": {
+                "76698835205": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "我在早自習": 1
+            }
+        },
+        "ubdbb6161c12fa6689d1ee6fe04b4b434": {
+            "stick": {
+                "2589424610218": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "已經減少": 1
+            }
+        },
+        "ubf3fe2ceee682439b81b22f0d89f5dba": {
+            "stick": {},
+            "text": {
+                "URLat\nline://home/post?userMid=ud9b2233536e1e16b177a2b7505a8ecd3&postId=1152559816108042447": 1,
+                "react": true
+            }
+        },
+        "uc0e0c6bc640047bdbd0c8683bcf34ef9": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "請大家投票一下吧": 1
+            }
+        },
+        "uc2f44f580e716d7945efa13bfcd5898c": {
+            "stick": {
+                "63861461156759": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "智商過低 無法顯示": 1
+            }
+        },
+        "uc37f5341ac53143477ee135761c6ddd5": {
+            "stick": {
+                "77460311190523": 1,
+                "react": true
+            },
+            "text": {}
+        },
+        "uccd27a806de4dc8d2eba8ad9ff747905": {
+            "stick": {
+                "484032000002": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "喵": 1
+            }
+        },
+        "ucd5b65e2074195908e9459b9b1103b36": {
+            "stick": {
+                "21": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "酷": 1
+            }
+        },
+        "ucdc360ab3f52ac6e3f96b2712fbdf348": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "「 Pesan Dihapus 」\n• Pengirim : 􀰂影炎本家§血染§初代目神無月風格の􏿿\n• Nama Grup : 神無月の家人窩🈲️翻\n• Waktu Ngirim : 14:07:20\n• Pesannya : \n《ShengYeSeltBot》指令表\n〘查看指令表〙\n【Help】查看全部指令\n【wind:help】查看全部指令(辨識用)\n【HelpTag】查看標註指令\n【HelpKick】查看踢人指令\n〘狀態〙\n【again】重新啟動機器\n【Runtime】查看機器運行時間\n【Speed】查看機器速度\n【Set】查看設定\n【About】查看自己的狀態\n【out】主機退群\n〘設定〙\n【Add On/Off】自動加入好友 開啟/關閉\n【Join On/Off】邀請自動進入群組 開啟/關閉\n【Leave On/Off】自動離開副本 開啟/關閉\n【Read On/Off】自動已讀 開啟/關閉\n【Inviteprotect On/Off】群組邀請保護 開啟/關閉\n【Reread On/Off】查看收回 開啟/關閉\n【Qr On/Off】群組網址保護 開啟/關閉\n【Qrjoin On/Off】網址自動入群 開啟/關閉\n【Ck On/Off】貼圖資料查詢 開啟/關閉\n【timeline On/Off】文章詳情查詢 開啟/關閉\n〘自己〙\n【Me】丟出自己好友資料\n【MyMid】查看自己系統識別碼\n【MyName】查看自己名字\n【MyBio】查看自己個簽\n【MyPicture】查看自己頭貼網址\n【MyCover】查看自己封面網址\n【Contact @】標註查看好友資料\n【Mid @】標註查看系統識別碼\n【Name @】標註查看名稱\n【Bio @】標註查看狀態消息\n【Picture @】標註查看頭貼\n【Cover @】標注查看封面\n【Friendlist】查看好友清單\n〘群組〙\n【Gowner】查看群組擁有者\n【Gurl】丟出群組網址\n【O/Curl】打開/關閉群組網址\n【Lg】查看所有群組\n【Gb】查看群組成員\n【Ginfo】查看群組狀態\n【Ri @】標註來回機票\n【Tk @】標注踢出成員(多踢)\n【Mk @】標注踢出成員(單踢)\n【Vk @】標註踢出並清除訊息\n【Vk:mid】使用系統識別碼踢出並清除訊息\n【Nk Name】使用名子踢出成員\n【Uk mid】使用系統識別碼踢出成員\n【NT Name】使用名子標註成員\n【Zk】踢出0字元\n【Zt】標註名字0字成員\n【Zm】丟出0字成員的系統識別碼\n【Cancel】取消所有成員邀請\n【Gn Name】更改群組名稱\n【Gc @】標註查看個人資料\n【Inv mid】使用系統識別碼邀請進入群組\n【Ban @】標註加入黑單\n【Unban @】標註解除黑單\n【Clear Ban】清空黑單\n【Kill Ban】剔除黑單\n【Zk】踢出名字0字成員\n【banlist】查看黑名單\n〘特別〙\n【Tagall】標註群組所有成員\n【S N/F/R】已讀點 開啟/關閉/重設\n【R】查看已讀\n【F/Gbc】好友/群組廣播\n【/invitemeto:】使用群組識別碼邀請至群組\n⇒Credits By.ShengYe™⇐\n": 1
+            }
+        },
+        "ud09e03de46402b2b8d2e38cf978a435f": {
+            "stick": {},
+            "text": {
+                "\n《ShengYeSeltBot》指令表\n〘查看指令表〙\n【Help】查看全部指令\n【wind:help】查看全部指令(辨識用)\n【HelpTag】查看標註指令\n【HelpKick】查看踢人指令\n〘狀態〙\n【again】重新啟動機器\n【Runtime】查看機器運行時間\n【Speed】查看機器速度\n【Set】查看設定\n【About】查看自己的狀態\n【out】主機退群\n〘設定〙\n【Add On/Off】自動加入好友 開啟/關閉\n【Join On/Off】邀請自動進入群組 開啟/關閉\n【Leave On/Off】自動離開副本 開啟/關閉\n【Read On/Off】自動已讀 開啟/關閉\n【Inviteprotect On/Off】群組邀請保護 開啟/關閉\n【Reread On/Off】查看收回 開啟/關閉\n【Qr On/Off】群組網址保護 開啟/關閉\n【Qrjoin On/Off】網址自動入群 開啟/關閉\n【Ck On/Off】貼圖資料查詢 開啟/關閉\n【timeline On/Off】文章詳情查詢 開啟/關閉\n〘自己〙\n【Me】丟出自己好友資料\n【MyMid】查看自己系統識別碼\n【MyName】查看自己名字\n【MyBio】查看自己個簽\n【MyPicture】查看自己頭貼網址\n【MyCover】查看自己封面網址\n【Contact @】標註查看好友資料\n【Mid @】標註查看系統識別碼\n【Name @】標註查看名稱\n【Bio @】標註查看狀態消息\n【Picture @】標註查看頭貼\n【Cover @】標注查看封面\n【Friendlist】查看好友清單\n〘群組〙\n【Gowner】查看群組擁有者\n【Gurl】丟出群組網址\n【O/Curl】打開/關閉群組網址\n【Lg】查看所有群組\n【Gb】查看群組成員\n【Ginfo】查看群組狀態\n【Ri @】標註來回機票\n【Tk @】標注踢出成員(多踢)\n【Mk @】標注踢出成員(單踢)\n【Vk @】標註踢出並清除訊息\n【Vk:mid】使用系統識別碼踢出並清除訊息\n【Nk Name】使用名子踢出成員\n【Uk mid】使用系統識別碼踢出成員\n【NT Name】使用名子標註成員\n【Zk】踢出0字元\n【Zt】標註名字0字成員\n【Zm】丟出0字成員的系統識別碼\n【Cancel】取消所有成員邀請\n【Gn Name】更改群組名稱\n【Gc @】標註查看個人資料\n【Inv mid】使用系統識別碼邀請進入群組\n【Ban @】標註加入黑單\n【Unban @】標註解除黑單\n【Clear Ban】清空黑單\n【Kill Ban】剔除黑單\n【Zk】踢出名字0字成員\n【banlist】查看黑名單\n〘特別〙\n【Tagall】標註群組所有成員\n【S N/F/R】已讀點 開啟/關閉/重設\n【R】查看已讀\n【F/Gbc】好友/群組廣播\n【/invitemeto:】使用群組識別碼邀請至群組\n⇒Credits By.ShengYe™⇐\n": 1,
+                "react": true
+            }
+        },
+        "ud2ef96b77b434af36f2afabf58b57eb6": {
+            "stick": {
+                "255391671815191": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "你都是单排": 1
+            }
+        },
+        "ud84221723d7ec928ede4f76ec939fa09": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "コマンド一覧\n\n/保護オン : 保護します\n\n/保護オフ : 保護しません\n\n/URL保護オン : URLを保護します\n\n/URL保護オフ : URLを保護しません\n\n/強制退会禁止オン : 強制退会を禁止します\n\n/強制退会禁止オフ : 強制退会を許可します\n\n/招待禁止オン : 招待を出来なくします\n\n/招待禁止オフ : 招待を出来るようにします\n\nｰｰｰｰｰｰｰキリトリｰｰｰｰｰｰｰ\n保護を退会させるには\nグループにこのbotを\n招待した方が手動で\n蹴って下さい。": 1
+            }
+        },
+        "udc2880e41c7e313f7ca43e9cf27fd066": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "換好了": 1
+            }
+        },
+        "uddafd037af0c5c348ede52f9b38ba968": {
+            "stick": {},
+            "text": {
+                "---[分享文章預覽]---\n[文章作成者]:\n@x \n[文字預覽]:\n淫蕩高逼求愛愛 此文出自高逼色誘別人後得到的結果 大家快看 有淫蕩發情的人 還不分享\n(僅顯示100字)\n[文章網址]:\nline://home/post?userMid=u961f4bc33d7a4c61836744cab2bc1917&postId=1152580407505042745": 1,
+                "react": true
+            }
+        },
+        "ue05b2afe4469adb49cb7ae2da121b45d": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "《指令反應》\n0.02066326141357422秒": 1
+            }
+        },
+        "ue0bcafc56084d43c94f2a073fd746bf8": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "給你看硬硬的咚咚( ･ิω･ิ)": 1
+            }
+        },
+        "ue0e6b3686491b85cc96525931e861bba": {
+            "stick": {
+                "293766591966770": 1,
+                "react": true
+            },
+            "text": {}
+        },
+        "ue38f124b0e571d6e3b55f664c9e43855": {
+            "stick": {
+                "114073966508": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "正妹欸": 1
+            }
+        },
+        "ue3c92ec90c563a88be62982cc832af69": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "這碎的好猛-.-": 1
+            }
+        },
+        "ue4a49e2f42cb327891425abd235f30e4": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "らいのんの雑談ぐるだよ〜！\n気軽に参加OK！\nみんな来てね〜\nhttp://line.me/R/ti/g/t4sfBNnmOM": 1
+            }
+        },
+        "ue4b43778620b70cc123bfcb10e0b1358": {
+            "stick": {
+                "481662000000": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "這到底..": 1
+            }
+        },
+        "ue5abad1afe492dacb6cc0c07b9befc0c": {
+            "stick": {
+                "104405421257466": 1,
+                "react": true
+            },
+            "text": {}
+        },
+        "ue68b8830ce8f9371d0870c7038525187": {
+            "stick": {
+                "430298403471588": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "。": 1
+            }
+        },
+        "ue90d465f004b8a2041c22062f1fbd24f": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "嘿嘿嘿": 1
+            }
+        },
+        "ueaf21d9a2811c018fe19e0dfd8cdfb3b": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "哇~": 1
+            }
+        },
+        "uede25fae9fcdcb58f633970ada4f208a": {
+            "stick": {
+                "332311983145024": 2,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "wwww": 1
+            }
+        },
+        "uee2e12cd9f1a3ce4ef4dae274adfde03": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "傳錯啊啊": 1
+            }
+        },
+        "uf10154b8ad04023bdcf48539e4f2579f": {
+            "stick": {
+                "153600141395507": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "現在少了/": 1
+            }
+        },
+        "uf1455b6980ef654a00dee70cb57f84eb": {
+            "stick": {
+                "168735521445168": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "能踢嗎？": 1
+            }
+        },
+        "uf211a7ad4a2d65bc16de387324bfe3b9": {
+            "stick": {
+                "151": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "睡覺晚安": 1
+            }
+        },
+        "uf22f175c965d47ebcae17e57cf99ede4": {
+            "stick": {},
+            "text": {
+                "R": 1,
+                "react": true
+            }
+        },
+        "uf61e1aeec5da17dd164b970e8bbd5da4": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "我的部落之前有人組好一副然後問我怎樣，我給他建議結果他完全不鳥我。。。": 1
+            }
+        },
+        "uf635088d666e4dd00642430e287d945f": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "保庇保庇保庇": 1
+            }
+        },
+        "uf8ae5b9b95db47234d38dc1bc24c0eb5": {
+            "stick": {
+                "84360781207687": 2,
+                "react": true
+            },
+            "text": {
+                "n": 1,
+                "react": true
+            }
+        },
+        "uf8dc977c32bf61a65486cdd43aec611d": {
+            "stick": {
+                "3074454810601": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "說": 1
+            }
+        },
+        "uf9485eb72b0dc745c7f414903aaaeb32": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "早安我的世界！（WTF": 1
+            }
+        },
+        "ufa16bbc3184bef4b61f2b1e7230eaac6": {
+            "stick": {},
+            "text": {
+                ".....這不像機器人啊": 1,
+                "react": true
+            }
+        },
+        "ufa481fa55cd764bb71ea53149ef54d4a": {
+            "stick": {
+                "22505791054167": 1,
+                "react": true
+            },
+            "text": {
+                "react": true,
+                "。。。": 1
+            }
+        },
+        "ufba410943361a1fdc81693f6a9c977e8": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "晚上": 1
+            }
+        },
+        "ufd7918cecca41bcbb7038d5f1c2fd5b2": {
+            "stick": {},
+            "text": {
+                "go": 1,
+                "react": true
+            }
+        },
+        "uff0064be805cb812d9fc9d09a6304e94": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "去睡啦": 1
+            }
+        },
+        "uff0e81fecadc2bbc818bf06b4fa895b8": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "嘖": 1
+            }
+        },
+        "ufffddffc3c9a5d8b8466d1841fe93594": {
+            "stick": {},
+            "text": {
+                "react": true,
+                "有拿到嗎？": 1
+            }
+        }
+    },
     "protect": {
         "c9f4d64d94681b9c6d42da8c282b865ca": "c9f4d64d94681b9c6d42da8c282b865ca"
     },
-    "qrprotect": {},
+    "qrprotect": {
+        "c9f4d64d94681b9c6d42da8c282b865ca": "c9f4d64d94681b9c6d42da8c282b865ca"
+    },
     "react": {
         "1": "我在尻尻",
         "2": "啊...不行了..嗯啊啊...好大...好粗....啊頂到底了.....啊好熱......我...我....我快不行了....要去了....啊啊啊....要去了.....不要啊....啊怎麼了....拜託你不要拔出去.....求你了.....快來操我這淫蕩氾濫的小穴吧.....求你了......啊....就是這感覺......蘇蘇麻麻的感覺......啊啊啊啊.....我真的不行了......要去了.....恩亨！！！！！",
         "50嵐": "吾乃常山蘿莉控是也",
+        "=_=": "我才懶的理你",
+        "@欻爷": "小低能",
         "yukino的作者": "是Arasi!!!",
         "伈": "是個大敗類",
         "伊嵐": "是帥哥",
         "伊楓": "877",
         "作者大大": "我的作者是帥哥",
+        "去汁阿": "汁好汁滿汁好往上淦",
         "奶茶": "吾乃常山蘿莉控是也",
         "嵐喵": "是877777",
         "師父": "87一個",
         "彼岸": "是萌妹子",
+        "早安": "各位早安",
         "智障嵐": "我是智障",
         "桃": "看起來像變態",
         "桐人": "吃雞",
         "烤鴨": "好吃",
+        "笑爛": "冬粉笑你們這群可愛的傻瓜",
         "罪夜": "是87",
         "鍺": "雞雞被敲爛了",
         "雯": "電雯拍揮下去就對了",
         "鴨子": "超好吃"
     },
     "reread": {
+        "c1b15b64a6ed6419530a816e0d8602c95": "c1b15b64a6ed6419530a816e0d8602c95",
+        "c24b9b8883f705803cad809f308ccb7c2": "c24b9b8883f705803cad809f308ccb7c2",
+        "c64a16ebf6709d4e05a90ea1bda9c3154": "c64a16ebf6709d4e05a90ea1bda9c3154",
+        "c8a0171cf1ae7a59f5061a262c4c9d714": "c8a0171cf1ae7a59f5061a262c4c9d714",
         "c9f4d64d94681b9c6d42da8c282b865ca": "c9f4d64d94681b9c6d42da8c282b865ca",
+        "ce3fed2b1c80fd4b5348f493b9fddd4e6": "ce3fed2b1c80fd4b5348f493b9fddd4e6",
+        "cf6f741a0f5c4789703148e7e92811679": "cf6f741a0f5c4789703148e7e92811679",
         "cf9755a99f2337ca971b18c370d147402": "cf9755a99f2337ca971b18c370d147402"
     },
     "sr": {
         "107537821265244": "放棄人生了",
+        "1101": "笑死",
         "111697511275554": "伊嵐在看你",
+        "111697671275554": "伊嵐崩潰中",
+        "111697691275554": "。",
         "111697731275554": "伊嵐已經失心瘋了",
+        "127230841315183": "伊嵐愛你 揪咪",
+        "127230991315183": "伊嵐問號",
         "131875251327085": "看著ㄓㄓ伊幹嵐溜過去",
         "168735381445168": "歧視你",
+        "1752": "呵呵",
         "311459932484808": "0",
         "58113691142501": "安德烈笑死",
         "58114011142501": "安德烈看你",
+        "63861451156759": "。",
         "84360501207687": "笑死我也",
-        "84360521207687": "伊嵐笑你們一群智障"
+        "84360521207687": "伊嵐笑你們一群智障",
+        "84360881207687": "噴你滿身白白黏黏的"
     },
     "timeline": true,
     "wel": {
         "c359e4980a4898b5b748f98a11725b25c": "歡迎進入群組！！！本群群長是變態！！！",
+        "c64a16ebf6709d4e05a90ea1bda9c3154": "歡迎",
+        "c6df644546fdfc150f45cd156d1537407": "歡迎光臨（真的沒梗別怪我",
         "c7b7a7004840346dca40fcad94c60ee4c": "歡迎進入群組！！！本群群長是變態！！！",
         "c9f4d64d94681b9c6d42da8c282b865ca": "群長的耳朵有跳蛋手機  震到高潮",
         "ce3e9e6fc2ba2a096c63e5efcebf626de": "歡迎進入群組！！！！本群群長是有大叔夢的偽娘",
