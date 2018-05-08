@@ -87,6 +87,9 @@ def helpmessage():
     【resetgroup】重新設定群組
     
     〘GM指令〙
+    【add_wc:(歡迎訊息)】新增群組歡迎訊息
+    【renew_wc:(歡迎訊息)】更新群組歡迎訊息
+    【del_wc】刪除群組歡迎訊息
     【add on/off】自動加入好友 開/關
     【ar on/off】自動已讀 開/關
     【join on/off】自動入群 開/關
@@ -329,6 +332,9 @@ def lineBot(op):
                     cl.sendMessage(to, str(ret_))
                     cl.sendImageWithURL(to, path)
                     cl.sendMessage(op.param1,ret_)
+                elif to in settings['cc']:
+                    command = "->add_sr:" + format(stk_id) + format(pkg_id) + ":"
+                    cl.sendMessage(to, command)
             elif msg.contentType == 16:
                 if settings["timeline"] == True:
                     try:
@@ -689,9 +695,10 @@ def lineBot(op):
                             json.dump(settings, fp, sort_keys=True, indent=4)
                         cl.sendMessage(to, "群組網址保護已關閉")
                     elif text.lower() == 'reread on':
-                        del settings["reread"][to]
-                        with open('temp.json', 'w') as fp:
-                            json.dump(settings, fp, sort_keys=True, indent=4)
+                        if to in settings["reread"][to]:
+                            del settings["reread"][to]
+                            with open('temp.json', 'w') as fp:
+                                json.dump(settings, fp, sort_keys=True, indent=4)
                         cl.sendMessage(to, "查詢收回開啟")
                     elif text.lower() == 'reread off':
                         settings["reread"][to] = to
@@ -714,6 +721,12 @@ def lineBot(op):
                         with open('temp.json', 'w') as fp:
                             json.dump(settings, fp, sort_keys=True, indent=4)
                         cl.sendMessage(to, "確認貼圖關閉")
+                    elif text.lower() == 'cc on':
+                        settings['cc'][to] == True
+                        cl.sendMessage(to, "生成貼圖指令開啟")
+                    elif text.lower() == 'cc off':
+                        del settings['cc'][to]
+                        cl.sendMessage(to, "生成貼圖指令關閉")
                     elif text.lower() == 'ourl':
                         if msg.toType == 2:
                             G = cl.getGroup(to)
@@ -764,6 +777,8 @@ def lineBot(op):
                         else: ret_ += "\n標註回覆 [OFF]"
                         if to not in  settings["checkSticker"]: ret_ += "\n貼圖資料查詢 [ON]"
                         else: ret_ += "\n貼圖資料查詢 [OFF]"
+                        if to in settings['cc']: ret_ += "\n生成貼圖指令 [ON]"
+                        else: ret_ += "\n生成貼圖指令 [OFF]"
                         cl.sendMessage(to, str(ret_))
                     except Exception as e:
                         cl.sendMessage(msg.to, str(e))
