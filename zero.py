@@ -890,7 +890,10 @@ def lineBot(op):
                                 pass
                             else:
                                 G.preventedJoinByTicket = False
-                            cl.updateGroup(G)
+                            try:
+                                kl.updateGroup(G)
+                            except:
+                                cl.updateGroup(G)
                             ticket = cl.reissueGroupTicket(to)
                             cl.acceptGroupInvitationByTicket(to, ticket)
                             kl.acceptGroupInvitationByTicket(to, ticket)
